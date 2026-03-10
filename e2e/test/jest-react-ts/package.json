@@ -42,20 +42,20 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*",
-    "@stryker-mutator/typescript-checker": "workspace:*",
+    "@d-es-ign/stryker-js-core": "workspace:*",
+    "@d-es-ign/stryker-js-jest-runner": "workspace:*",
+    "@d-es-ign/stryker-js-typescript-checker": "workspace:*",
     "@types/reach__router": "~1.3.10",
     "jest-environment-jsdom": "27.5.1"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@d-es-ign/stryker-js-core": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@d-es-ign/stryker-js-jest-runner": {
       "injected": true
     },
-    "@stryker-mutator/typescript-checker": {
+    "@d-es-ign/stryker-js-typescript-checker": {
       "injected": true
     }
   }

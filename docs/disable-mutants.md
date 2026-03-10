@@ -201,17 +201,17 @@ function subtract(a, b) {
 
 In the code above, you might want to ignore all mutants in `console.debug` statements in this code. This is where an ignore-plugin can help.
 
-To declare an ignore-plugin, first install `@stryker-mutator/api` as a dev dependency:
+To declare an ignore-plugin, first install `@d-es-ign/stryker-js-api` as a dev dependency:
 
 ```
-npm i -D @stryker-mutator/api
+npm i -D @d-es-ign/stryker-js-api
 ```
 
 Now add a "stryker-console-ignorer.js" to your project:
 
 ```js
 // stryker-console-ignorer.js
-import { PluginKind, declareValuePlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareValuePlugin } from '@d-es-ign/stryker-js-api/plugin';
 
 export const strykerPlugins = [declareValuePlugin(PluginKind.Ignore, 'console.debug', {
   shouldIgnore(path) {
@@ -239,7 +239,7 @@ You configure this plugin in your 'stryker.config.json' file:
 ```json
 {
   "ignorers": ["console.debug"],
-  "plugins": ["@stryker-mutator/*", "./stryker-console-ignorer.js"]
+  "plugins": ["@d-es-ign/stryker-js-*", "./stryker-console-ignorer.js"]
 }
 ```
 
@@ -252,10 +252,10 @@ After rerunning Stryker, your report will look like this.
 If you want TypeScript type-safety on the `path` being passed into your ignore-plugin, you will need to install the babel types yourself: `npm i -D @types/babel__core` and add this TypeScript file somewhere in your project:
 
 ```ts
-/// <reference types="@stryker-mutator/api/ignore" />
+/// <reference types="@d-es-ign/stryker-js-api/ignore" />
 import type babel from '@babel/core';
 
-declare module '@stryker-mutator/api/ignore' {
+declare module '@d-es-ign/stryker-js-api/ignore' {
   export interface NodePath extends babel.NodePath {}
 }
 ```

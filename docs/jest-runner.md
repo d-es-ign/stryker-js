@@ -5,20 +5,20 @@ custom_edit_url: https://github.com/stryker-mutator/stryker-js/edit/master/docs/
 
 ## Installation
 
-Install @stryker-mutator/jest-runner locally within your project folder, like so:
+Install @d-es-ign/stryker-js-jest-runner locally within your project folder, like so:
 
 ```bash
-npm i --save-dev @stryker-mutator/jest-runner
+npm i --save-dev @d-es-ign/stryker-js-jest-runner
 # OR
-yarn add --dev @stryker-mutator/jest-runner
+yarn add --dev @d-es-ign/stryker-js-jest-runner
 ```
 
 ## Peer dependencies
 
-The @stryker-mutator/jest-runner is a plugin for Stryker to enable Jest as a test runner. As such, you should make sure you have the correct versions of its dependencies installed:
+The @d-es-ign/stryker-js-jest-runner is a plugin for Stryker to enable Jest as a test runner. As such, you should make sure you have the correct versions of its dependencies installed:
 
 - jest
-- @stryker-mutator/core
+- @d-es-ign/stryker-js-core
 
 For the minimum supported versions, see the peerDependencies section in the [package.json](https://raw.githubusercontent.com/stryker-mutator/stryker/master/packages/jest-runner/package.json).
 
@@ -32,7 +32,7 @@ Make sure you set the `testRunner` option to "jest".
 }
 ```
 
-The @stryker-mutator/jest-runner also provides a couple of configurable options using the `jest` property in your Stryker config:
+The @d-es-ign/stryker-js-jest-runner also provides a couple of configurable options using the `jest` property in your Stryker config:
 
 ```json
 {
@@ -61,7 +61,7 @@ Configure where jest should get its configuration from.
 
 Default: `undefined`
 
-The path to your Jest config file of package.json file containing in the `"jest"` key. By default, the @stryker-mutator/jest-runner will try to look for "jest.conf.js" or "package.json" in the current working directory.
+The path to your Jest config file of package.json file containing in the `"jest"` key. By default, the @d-es-ign/stryker-js-jest-runner will try to look for "jest.conf.js" or "package.json" in the current working directory.
 
 ### `jest.config` [`object`]
 
@@ -87,7 +87,7 @@ Jest ships with [support for ECMAScript Modules (ESM)](https://jestjs.io/docs/ec
 
 ## Coverage analysis
 
-The `@stryker-mutator/jest-runner` plugin supports coverage analysis and test filtering, meaning you can run with `--coverageAnalysis perTest` for optimal performance.
+The `@d-es-ign/stryker-js-jest-runner` plugin supports coverage analysis and test filtering, meaning you can run with `--coverageAnalysis perTest` for optimal performance.
 
 ### Coverage reporting
 
@@ -107,17 +107,17 @@ Becomes:
 
 ```js
 /**
- * @jest-environment @stryker-mutator/jest-runner/jest-env/jsdom
+ * @jest-environment @d-es-ign/stryker-js-jest-runner/jest-env/jsdom
  */
 ```
 
-This is the list of jest environments that are shipped with @stryker-mutator/jest-runner.
+This is the list of jest environments that are shipped with @d-es-ign/stryker-js-jest-runner.
 
-| Jest test environment          | @stryker-mutator/jest-runner override               |
+| Jest test environment          | @d-es-ign/stryker-js-jest-runner override               |
 | ------------------------------ | --------------------------------------------------- |
-| node                           | @stryker-mutator/jest-runner/jest-env/node          |
-| jsdom                          | @stryker-mutator/jest-runner/jest-env/jsdom         |
-| jest-environment-jsdom-sixteen | @stryker-mutator/jest-runner/jest-env/jsdom-sixteen |
+| node                           | @d-es-ign/stryker-js-jest-runner/jest-env/node          |
+| jsdom                          | @d-es-ign/stryker-js-jest-runner/jest-env/jsdom         |
+| jest-environment-jsdom-sixteen | @d-es-ign/stryker-js-jest-runner/jest-env/jsdom-sixteen |
 
 Don't worry; using Stryker's alternative is harmless during regular unit testing.
 
@@ -125,7 +125,7 @@ If you're using a custom test environment, you'll need to mixin the Stryker func
 
 ```js
 // my-custom-jest-environment.js
-const { mixinJestEnvironment } = require('@stryker-mutator/jest-runner');
+const { mixinJestEnvironment } = require('@d-es-ign/stryker-js-jest-runner');
 const { TestEnvironment } = require('jest-environment-node');
 // const TestEnvironment = require('jest-environment-node'); // 👈 Jest@27 or lower
 
@@ -139,6 +139,6 @@ module.exports = mixinJestEnvironment(MyCustomTestEnvironment);
 
 ### Test filtering
 
-When using `"perTest"` coverage analysis, the `@stryker-mutator/jest-runner` will hook into the [jest test runner](https://jestjs.io/docs/en/configuration.html#testrunner-string). Both `"jasmine2"` as well as [`jest-circus`](https://www.npmjs.com/package/jest-circus) (default) are supported here.
+When using `"perTest"` coverage analysis, the `@d-es-ign/stryker-js-jest-runner` will hook into the [jest test runner](https://jestjs.io/docs/en/configuration.html#testrunner-string). Both `"jasmine2"` as well as [`jest-circus`](https://www.npmjs.com/package/jest-circus) (default) are supported here.
 
 If you're using a different test runner, you're out of luck. Please downgrade to using `"all"` coverage analysis. If you think we should support your test runner, please let us know by opening an [issue](https://github.com/stryker-mutator/stryker-js/issues/new?assignees=&labels=%F0%9F%9A%80+Feature+request&template=feature_request.md&title=), or by joining our [slack channel](https://join.slack.com/t/stryker-mutator/shared_invite/enQtOTUyMTYyNTg1NDQ0LTU4ODNmZDlmN2I3MmEyMTVhYjZlYmJkOThlNTY3NTM1M2QxYmM5YTM3ODQxYmJjY2YyYzllM2RkMmM1NjNjZjM).

@@ -17,8 +17,8 @@ import net from 'net';
 import { on } from 'events';
 import { createInjector, Injector } from 'typed-inject';
 import { PrepareExecutor } from './process/1-prepare-executor.js';
-import { createInstrumenter } from '@stryker-mutator/instrumenter';
-import { commonTokens, PluginKind } from '@stryker-mutator/api/plugin';
+import { createInstrumenter } from '@d-es-ign/stryker-js-instrumenter';
+import { commonTokens, PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 import { coreTokens } from './di/index.js';
 import { objectUtils } from './utils/object-utils.js';
 import { JsonRpcEventDeserializer } from './utils/json-rpc-event-deserializer.js';
@@ -27,8 +27,8 @@ import {
   LogLevel,
   MutantResult,
   PartialStrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Reporter } from '@stryker-mutator/api/report';
+} from '@d-es-ign/stryker-js-api/core';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 import { Stryker } from './stryker.js';
 import { promisify } from 'util';
 import { normalizeReportFileName } from './reporters/mutation-test-report-helper.js';
@@ -41,7 +41,7 @@ import {
   LoggingServer,
   LoggingServerAddress,
 } from './logging/index.js';
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { Logger, LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
 
 export const rpcMethods = Object.freeze({
   configure: 'configure',

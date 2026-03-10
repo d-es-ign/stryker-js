@@ -23,7 +23,7 @@ The `npm init stryker@latest` command also creates a `stryker.config.json` or `s
 
 ```json
 {
-  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "./node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "_comment": "This config was generated using a preset. Please see website for more information: https://stryker-mutator.io/docs/stryker-js/guides/angular",
   "mutate": ["src/**/*.ts", "!src/**/*.spec.ts", "!src/test.ts", "!src/environments/*.ts"],
   "testRunner": "karma",
@@ -54,7 +54,7 @@ Jest support in Angular is experimental, so the integration StrykerJS needs is n
 Install the needed packages with the following command: 
 
 ```shell
-npm i -D @stryker-mutator/core @stryker-mutator/jest-runner
+npm i -D @d-es-ign/stryker-js-core @d-es-ign/stryker-js-jest-runner
 ```
 
 ### Configuration
@@ -63,7 +63,7 @@ Create a `stryker.config.json` file with the following content:
 
 ```json
 {
-  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "./node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "mutate": [
     "src/**/*.ts",
     "!src/**/*.spec.ts",
@@ -110,8 +110,8 @@ Run Stryker using `npx stryker run`.
 
 Consider adding the Stryker TypeScript checker to increase mutation testing performance and kill mutants that would result in compilation errors:
 
-1. Install `@stryker-mutator/typescript-checker` as a development dependency:
-   `npm install --save-dev @stryker-mutator/typescript-checker`
+1. Install `@d-es-ign/stryker-js-typescript-checker` as a development dependency:
+   `npm install --save-dev @d-es-ign/stryker-js-typescript-checker`
 1. Configure the TypeScript checker in `stryker.config.json`:
    ```json
    {

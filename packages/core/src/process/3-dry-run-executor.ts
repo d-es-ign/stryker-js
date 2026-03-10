@@ -1,10 +1,10 @@
 import { EOL } from 'os';
 
-import { I, requireResolve } from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens, Injector } from '@stryker-mutator/api/plugin';
-import { StrykerOptions, Mutant } from '@stryker-mutator/api/core';
-import { DryRunCompletedEvent, RunTiming } from '@stryker-mutator/api/report';
+import { I, requireResolve } from '@d-es-ign/stryker-js-util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens, Injector } from '@d-es-ign/stryker-js-api/plugin';
+import { StrykerOptions, Mutant } from '@d-es-ign/stryker-js-api/core';
+import { DryRunCompletedEvent, RunTiming } from '@d-es-ign/stryker-js-api/report';
 import {
   DryRunResult,
   TestRunner,
@@ -14,7 +14,7 @@ import {
   TestResult,
   FailedTestResult,
   ErrorDryRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { lastValueFrom, of } from 'rxjs';
 
 import { coreTokens } from '../di/index.js';

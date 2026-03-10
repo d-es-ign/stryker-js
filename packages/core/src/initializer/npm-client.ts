@@ -1,6 +1,6 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { errorToString } from '@stryker-mutator/util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { errorToString } from '@d-es-ign/stryker-js-util';
 import type {
   IRestResponse,
   RestClient,
@@ -18,7 +18,7 @@ export interface NpmSearchResult {
 
 const getName = (packageName: string) => {
   return packageName
-    .replace('@stryker-mutator/', '')
+    .replace('@d-es-ign/stryker-js-', '')
     .replace('stryker-', '')
     .split('-')[0];
 };
@@ -57,13 +57,13 @@ export class NpmClient {
 
   public getTestRunnerOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/test-runner-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@d-es-ign/stryker-js-test-runner-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 
   public getTestReporterOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/reporter-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@d-es-ign/stryker-js-reporter-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 

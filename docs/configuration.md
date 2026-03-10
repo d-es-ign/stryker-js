@@ -157,7 +157,7 @@ With `coverageAnalysis` you specify which coverage analysis strategy you want to
 Stryker can analyze mutant coverage results. Doing this can speed up mutation testing because Stryker then decides to run only the exact tests covering the mutant it is testing (instead of running them all).
 This performance optimization does _not_ influence the resulting mutation testing score but does allow Stryker to distinguish between "Survived" and "NoCoverage".
 
-All official test runner plugins (`@stryker-mutator/mocha-runner`, `@stryker-mutator/jasmine-runner`, `@stryker-mutator/karma-runner` and `@stryker-mutator/jest-runner`)
+All official test runner plugins (`@d-es-ign/stryker-js-mocha-runner`, `@d-es-ign/stryker-js-jasmine-runner`, `@d-es-ign/stryker-js-karma-runner` and `@d-es-ign/stryker-js-jest-runner`)
 support coverage analysis, except for the `command` test runner, since Stryker will just run your command has no way of knowing more about your tests.
 
 The possible values are:
@@ -211,7 +211,7 @@ See the difference of bail vs no bail on StrykerJS's utils package (with `--conc
 
 As you can see, when you disable bail, a lot more tests get the "Killing" status, meaning that they killed at least 1 mutant. This does come with a performance penalty of 12s in this example.
 
-_Note: Disable bail needs to be supported by the test runner plugin in order to work. All official test runner plugins (`@stryker-mutator/xxx-runner`) support this feature except for Jest. Jest always runs without --bail (see [#11766](https://github.com/facebook/jest/issues/11766)) inside Stryker, however it will report only the first failing test when disableBail=false and all failing tests when disableBail=true_
+_Note: Disable bail needs to be supported by the test runner plugin in order to work. All official test runner plugins (`@d-es-ign/stryker-js-xxx-runner`) support this feature except for Jest. Jest always runs without --bail (see [#11766](https://github.com/facebook/jest/issues/11766)) inside Stryker, however it will report only the first failing test when disableBail=false and all failing tests when disableBail=true_
 
 ### `disableTypeChecks` [`boolean` | `string`]
 
@@ -469,12 +469,12 @@ The package manager Stryker can use to install missing dependencies.
 
 ### `plugins` [`string[]`]
 
-Default: `['@stryker-mutator/*']`<br />
-Command line: `--plugins @stryker-mutator/jasmine-framework,@stryker-mutator/karma-runner`<br />
-Config file: `"plugins": ["@stryker-mutator/jasmine-framework", "@stryker-mutator/karma-runner"]`
+Default: `['@d-es-ign/stryker-js-*']`<br />
+Command line: `--plugins @d-es-ign/stryker-js-jasmine-framework,@d-es-ign/stryker-js-karma-runner`<br />
+Config file: `"plugins": ["@d-es-ign/stryker-js-jasmine-framework", "@d-es-ign/stryker-js-karma-runner"]`
 
 With `plugins`, you can add additional Node modules for Stryker to load (using `import`).
-By default, all `node_modules` starting with `@stryker-mutator/*` will be loaded, so you would normally not need to specify this option.
+By default, all `node_modules` starting with `@d-es-ign/stryker-js-*` will be loaded, so you would normally not need to specify this option.
 These modules should be installed right next to stryker. For a current list of plugins,
 you can consult [npm](https://www.npmjs.com/search?q=stryker-plugin) or use one of the officially supported plugins.
 
@@ -573,7 +573,7 @@ With `testRunner` you specify the test runner that Stryker uses to run your test
 The command test runner can be made to work in any use case, but comes with a performance
 penalty, as Stryker cannot do any optimizations and just runs all tests for all mutants.
 If possible, you should try to use one of the test runner plugins that hook into your test runner of choice.
-For example: install and use the `@stryker-mutator/karma-runner` to use `karma` as a test runner.
+For example: install and use the `@d-es-ign/stryker-js-karma-runner` to use `karma` as a test runner.
 
 ### `testRunnerNodeArgs` [`string[]`]
 
@@ -635,7 +635,7 @@ Default: `"tsconfig.json"`<br />
 Command line: _none_<br />
 Config file: `"tsconfigFile": "typescript.config.json"`
 
-Configure the (root) tsconfig file for typescript projects. This will allow Stryker to rewrite the `extends` and `references` settings in this and related tsconfig files in your sandbox. Defaults to `tsconfig.json`. This setting is also used when you enable the `@stryker-mutator/typescript-checker plugin`.
+Configure the (root) tsconfig file for typescript projects. This will allow Stryker to rewrite the `extends` and `references` settings in this and related tsconfig files in your sandbox. Defaults to `tsconfig.json`. This setting is also used when you enable the `@d-es-ign/stryker-js-typescript-checker plugin`.
 
 ### `warnings` [`boolean` or `object`]
 

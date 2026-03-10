@@ -8,5 +8,5 @@ export default {
   timeoutMS: 120000,
   concurrency: 1,
   coverageAnalysis: 'perTest',
-  plugins: [import.meta.resolve('@stryker-mutator/karma-runner')],
+  plugins: [import.meta.resolve('@d-es-ign/stryker-js-karma-runner')],
 };

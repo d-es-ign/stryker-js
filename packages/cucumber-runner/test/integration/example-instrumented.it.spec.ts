@@ -6,8 +6,8 @@ import {
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
-import { MutantCoverage } from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-test-helpers';
+import { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';
 import { CucumberTestRunner } from '../../src/index.js';

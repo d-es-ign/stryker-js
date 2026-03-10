@@ -1,6 +1,6 @@
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { FileDescriptions, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 
 export class Echo {
   public static inject = tokens(

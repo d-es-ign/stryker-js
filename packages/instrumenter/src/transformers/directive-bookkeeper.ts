@@ -1,7 +1,7 @@
 import type { types } from '@babel/core';
-import { notEmpty } from '@stryker-mutator/util';
+import { notEmpty } from '@d-es-ign/stryker-js-util';
 
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 
 import { NodeMutator } from '../mutators/node-mutator.js';
 

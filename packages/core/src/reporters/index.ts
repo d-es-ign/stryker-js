@@ -2,7 +2,7 @@ import {
   declareClassPlugin,
   declareFactoryPlugin,
   PluginKind,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 
 import { ClearTextReporter } from './clear-text-reporter.js';
 import { dashboardReporterFactory } from './dashboard-reporter/index.js';

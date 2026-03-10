@@ -1,5 +1,12 @@
 # AngularProject
 
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server

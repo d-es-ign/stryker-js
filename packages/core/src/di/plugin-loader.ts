@@ -2,14 +2,14 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath, pathToFileURL, URL } from 'url';
 
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import {
   tokens,
   commonTokens,
   Plugin,
   PluginKind,
-} from '@stryker-mutator/api/plugin';
-import { notEmpty, propertyPath } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/plugin';
+import { notEmpty, propertyPath } from '@d-es-ign/stryker-js-util';
 
 import { fileUtils } from '../utils/file-utils.js';
 import { defaultOptions } from '../config/options-validator.js';
@@ -55,8 +55,8 @@ export class PluginLoader {
    *  * A full url: "file:///home/nicojs/github/my-plugin.js"
    *  * An absolute file path: "/home/nicojs/github/my-plugin.js"
    *  * A relative path: "./my-plugin.js"
-   *  * A bare import expression: "@stryker-mutator/karma-runner"
-   *  * A simple glob expression (only wild cards are supported): "@stryker-mutator/*"
+   *  * A bare import expression: "@d-es-ign/stryker-js-karma-runner"
+   *  * A simple glob expression (only wild cards are supported): "@d-es-ign/stryker-js-*"
    */
   public async load(
     pluginDescriptors: readonly string[],
@@ -115,7 +115,7 @@ export class PluginLoader {
           ) {
             return pathToFileURL(path.resolve(pluginExpression)).toString();
           } else {
-            // Bare plugin expression like "@stryker-mutator/mocha-runner" (or file URL)
+            // Bare plugin expression like "@d-es-ign/stryker-js-mocha-runner" (or file URL)
             return pluginExpression;
           }
         }),
@@ -214,7 +214,7 @@ export class PluginLoader {
 /**
  * Distills organization name from a package expression.
  * @example
- *  '@stryker-mutator/core' => { org: '@stryker-mutator', 'core' }
+ *  '@d-es-ign/stryker-js-core' => { org: '@d-es-ign', 'stryker-js-core' }
  *  'glob' => { org: '', 'glob' }
  */
 function parsePluginExpression(pluginExpression: string) {

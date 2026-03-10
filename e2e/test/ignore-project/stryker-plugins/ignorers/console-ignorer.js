@@ -1,5 +1,5 @@
 // @ts-check
-import { PluginKind, declareValuePlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareValuePlugin } from '@d-es-ign/stryker-js-api/plugin';
 
 export const strykerPlugins = [
   declareValuePlugin(PluginKind.Ignore, 'ConsoleIgnorer', {

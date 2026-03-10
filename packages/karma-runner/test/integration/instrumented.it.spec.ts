@@ -2,12 +2,12 @@ import {
   testInjector,
   factory,
   assertions,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import {
   KilledMutantRunResult,
   MutantRunStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 
 import {
   createKarmaTestRunner,

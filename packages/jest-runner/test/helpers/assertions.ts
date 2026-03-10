@@ -3,7 +3,7 @@ import {
   FailedTestResult,
   SkippedTestResult,
   SuccessTestResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { expect } from 'chai';
 
 export type PartialTestResult =

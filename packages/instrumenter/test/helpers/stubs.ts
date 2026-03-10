@@ -1,6 +1,6 @@
 import sinon from 'sinon';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { ParserContext } from '../../src/parsers/parser-context.js';
 import { PrinterContext } from '../../src/printers/index.js';

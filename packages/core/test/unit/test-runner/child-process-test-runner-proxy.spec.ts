@@ -1,10 +1,10 @@
 import { URL } from 'url';
 
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
+import { FileDescriptions, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { Task } from '@stryker-mutator/util';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { Task } from '@d-es-ign/stryker-js-util';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { ChildProcessCrashedError } from '../../../src/child-proxy/child-process-crashed-error.js';
 import {

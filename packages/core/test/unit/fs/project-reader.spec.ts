@@ -1,13 +1,13 @@
 import path from 'path';
 import type { Dirent } from 'fs';
 
-import { MutateDescription, MutationRange } from '@stryker-mutator/api/core';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { MutateDescription, MutationRange } from '@d-es-ign/stryker-js-api/core';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import {
   I,
   normalizeFileName,
   normalizeWhitespaces,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

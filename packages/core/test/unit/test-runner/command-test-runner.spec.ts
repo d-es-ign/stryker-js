@@ -6,12 +6,12 @@ import {
   DryRunResult,
   DryRunStatus,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
-import { errorToString } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { errorToString } from '@d-es-ign/stryker-js-util';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { factory, assertions } from '@stryker-mutator/test-helpers';
-import { CommandRunnerOptions } from '@stryker-mutator/api/core';
+import { factory, assertions } from '@d-es-ign/stryker-js-test-helpers';
+import { CommandRunnerOptions } from '@d-es-ign/stryker-js-api/core';
 
 import { CommandTestRunner } from '../../../src/test-runner/command-test-runner.js';
 import { objectUtils } from '../../../src/utils/object-utils.js';

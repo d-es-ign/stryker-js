@@ -5,13 +5,13 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import {
   commonTokens,
   declareClassPlugin,
   PluginKind,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   TestRunner,
   DryRunResult,
@@ -21,8 +21,8 @@ import {
   MutantRunOptions,
   TestRunnerCapabilities,
   toMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
-import { factory } from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { factory } from '@d-es-ign/stryker-js-test-helpers';
 
 abstract class NotImplementedTestRunner implements TestRunner {
   public capabilities(): Promise<TestRunnerCapabilities> {

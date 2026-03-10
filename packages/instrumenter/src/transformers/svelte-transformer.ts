@@ -1,4 +1,4 @@
-import { notEmpty } from '@stryker-mutator/util';
+import { notEmpty } from '@d-es-ign/stryker-js-util';
 
 import { types } from '@babel/core';
 

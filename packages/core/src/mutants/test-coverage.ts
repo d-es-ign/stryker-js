@@ -1,11 +1,11 @@
-import { CoverageData } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { CoverageData } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   CompleteDryRunResult,
   TestResult,
-} from '@stryker-mutator/api/test-runner';
-import { notEmpty } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { notEmpty } from '@d-es-ign/stryker-js-util';
 
 import { coreTokens } from '../di/index.js';
 

@@ -1,8 +1,8 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { StrykerError } from '@stryker-mutator/util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { StrykerError } from '@d-es-ign/stryker-js-util';
 import { HttpClient } from 'typed-rest-client/HttpClient.js';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 
 import { objectUtils } from '../../utils/object-utils.js';
 

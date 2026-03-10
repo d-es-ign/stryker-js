@@ -1,14 +1,14 @@
 import { expect } from 'chai';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   factory,
   testInjector,
   assertions,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import {
   CompleteDryRunResult,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 
 import {
   JestTestRunner,

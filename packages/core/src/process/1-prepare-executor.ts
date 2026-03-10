@@ -2,15 +2,15 @@ import {
   StrykerOptions,
   PartialStrykerOptions,
   strykerCoreSchema,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 import {
   BaseContext,
   commonTokens,
   Injector,
   tokens,
-} from '@stryker-mutator/api/plugin';
-import { frameworkPluginsFileUrl } from '@stryker-mutator/instrumenter';
-import { deepFreeze } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/plugin';
+import { frameworkPluginsFileUrl } from '@d-es-ign/stryker-js-instrumenter';
+import { deepFreeze } from '@d-es-ign/stryker-js-util';
 import { execaCommand } from 'execa';
 
 import { ConfigReader } from '../config/config-reader.js';
@@ -27,7 +27,7 @@ import { UnexpectedExitHandler } from '../unexpected-exit-handler.js';
 import { FileSystem, ProjectReader } from '../fs/index.js';
 
 import { MutantInstrumenterContext } from './index.js';
-import { Reporter } from '@stryker-mutator/api/report';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 import { LoggingBackend, LoggingServerAddress } from '../logging/index.js';
 
 export interface PrepareExecutorContext extends BaseContext {

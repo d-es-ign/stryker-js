@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "concurrency": 1,
   "reporters": ["json"],
   "disableBail": true,
@@ -11,12 +11,12 @@
     "testFiles": ["test/*.tap.js"]
   },
   "plugins": [
-    "@stryker-mutator/karma-runner",
-    "@stryker-mutator/tap-runner",
-    "@stryker-mutator/jasmine-runner",
-    "@stryker-mutator/jest-runner",
-    "@stryker-mutator/mocha-runner",
-    "@stryker-mutator/cucumber-runner",
-    "@stryker-mutator/vitest-runner"
+    "@d-es-ign/stryker-js-karma-runner",
+    "@d-es-ign/stryker-js-tap-runner",
+    "@d-es-ign/stryker-js-jasmine-runner",
+    "@d-es-ign/stryker-js-jest-runner",
+    "@d-es-ign/stryker-js-mocha-runner",
+    "@d-es-ign/stryker-js-cucumber-runner",
+    "@d-es-ign/stryker-js-vitest-runner"
   ]
 }

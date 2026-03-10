@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { MutantResult } from '@stryker-mutator/api/core';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { MutantResult } from '@d-es-ign/stryker-js-api/core';
+import { TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

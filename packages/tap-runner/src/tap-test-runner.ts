@@ -8,7 +8,7 @@ import {
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   BaseTestResult,
   determineHitLimitReached,
@@ -23,15 +23,15 @@ import {
   TestStatus,
   TimeoutDryRunResult,
   toMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   InstrumenterContext,
   INSTRUMENTER_CONSTANTS,
   MutantCoverage,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { normalizeFileName, testFilesProvided } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { normalizeFileName, testFilesProvided } from '@d-es-ign/stryker-js-util';
 
 import * as pluginTokens from './plugin-tokens.js';
 import {

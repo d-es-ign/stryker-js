@@ -4,17 +4,17 @@
 import { EOL } from 'os';
 
 import ts from 'typescript';
-import { Checker, CheckResult, CheckStatus } from '@stryker-mutator/api/check';
+import { Checker, CheckResult, CheckStatus } from '@d-es-ign/stryker-js-api/check';
 import {
   tokens,
   commonTokens,
   PluginContext,
   Injector,
   Scope,
-} from '@stryker-mutator/api/plugin';
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
-import { Mutant, StrykerOptions } from '@stryker-mutator/api/core';
-import { split, strykerReportBugUrl } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/plugin';
+import { Logger, LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
+import { Mutant, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { split, strykerReportBugUrl } from '@d-es-ign/stryker-js-util';
 
 import * as pluginTokens from './plugin-tokens.js';
 import { TypescriptCompiler } from './typescript-compiler.js';

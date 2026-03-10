@@ -10,6 +10,6 @@ module.exports = {
   concurrency: 1,
   logLevel: 'info',
   plugins: [
-    '@stryker-mutator/mocha-runner'
+    '@d-es-ign/stryker-js-mocha-runner'
   ]
 };

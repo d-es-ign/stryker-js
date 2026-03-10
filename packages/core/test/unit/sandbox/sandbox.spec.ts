@@ -4,10 +4,10 @@ import type { execaCommand } from 'execa';
 import { npmRunPathEnv } from 'npm-run-path';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
-import { I, normalizeWhitespaces } from '@stryker-mutator/util';
+import { testInjector, factory } from '@d-es-ign/stryker-js-test-helpers';
+import { I, normalizeWhitespaces } from '@d-es-ign/stryker-js-util';
 
-import { FileDescriptions } from '@stryker-mutator/api/core';
+import { FileDescriptions } from '@d-es-ign/stryker-js-api/core';
 
 import { Sandbox } from '../../../src/sandbox/sandbox.js';
 import { coreTokens } from '../../../src/di/index.js';

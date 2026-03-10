@@ -1,16 +1,16 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 import { Injector } from 'typed-inject';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import {
   Instrumenter,
   InstrumentResult,
   InstrumenterOptions,
   createInstrumenter,
-} from '@stryker-mutator/instrumenter';
-import { I } from '@stryker-mutator/util';
-import { FileDescriptions } from '@stryker-mutator/api/core';
-import { PluginKind } from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-instrumenter';
+import { I } from '@d-es-ign/stryker-js-util';
+import { FileDescriptions } from '@d-es-ign/stryker-js-api/core';
+import { PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 
 import {
   DryRunContext,

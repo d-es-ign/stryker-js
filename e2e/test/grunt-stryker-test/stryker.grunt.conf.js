@@ -1,6 +1,6 @@
 module.exports = {
   $schema:
-    '../../node_modules/@stryker-mutator/core/schema/stryker-schema.json',
+    '../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json',
   mutate: ['sampleProject/src/**'],
   karma: {
     config: {
@@ -8,7 +8,7 @@ module.exports = {
       plugins: [require.resolve('karma-jasmine'), require.resolve('karma-chrome-launcher')],
     },
   },
-  plugins: ['@stryker-mutator/karma-runner'],
+  plugins: ['@d-es-ign/stryker-js-karma-runner'],
   testRunner: 'karma',
   logLevel: 'info',
   fileLogLevel: 'warn',

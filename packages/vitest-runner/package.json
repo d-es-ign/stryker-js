@@ -1,6 +1,6 @@
 {
-  "name": "@stryker-mutator/vitest-runner",
-  "version": "9.6.0",
+  "name": "@d-es-ign/stryker-js-vitest-runner",
+  "version": "9.6.1",
   "description": "A plugin to use the vitest test runner and framework in Stryker, the JavaScript mutation testing framework",
   "files": [
     "dist/schema",
@@ -32,7 +32,7 @@
   "keywords": [
     "stryker",
     "vitest",
-    "@stryker-mutator/test-runner-plugin"
+    "@d-es-ign/stryker-js-test-runner-plugin"
   ],
   "publishConfig": {
     "access": "public"
@@ -47,7 +47,7 @@
   },
   "homepage": "https://stryker-mutator.io/docs/stryker-js/vitest-runner",
   "devDependencies": {
-    "@stryker-mutator/test-helpers": "workspace:*",
+    "@d-es-ign/stryker-js-test-helpers": "workspace:*",
     "@types/node": "24.10.13",
     "@vitest/browser": "4.0.18",
     "@vitest/browser-playwright": "4.0.18",
@@ -58,12 +58,12 @@
     "vitest-browser-react": "2.0.5"
   },
   "peerDependencies": {
-    "@stryker-mutator/core": "workspace:*",
+    "@d-es-ign/stryker-js-core": "workspace:*",
     "vitest": ">=2.0.0"
   },
   "dependencies": {
-    "@stryker-mutator/api": "workspace:*",
-    "@stryker-mutator/util": "workspace:*",
+    "@d-es-ign/stryker-js-api": "workspace:*",
+    "@d-es-ign/stryker-js-util": "workspace:*",
     "tslib": "~2.8.0"
   },
   "initStrykerConfig": {

@@ -2,13 +2,13 @@ import childProcess from 'child_process';
 import os from 'os';
 import { fileURLToPath, URL } from 'url';
 
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
+import { FileDescriptions, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import {
   isErrnoException,
   Task,
   ExpirableTask,
   StrykerError,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import { Disposable, InjectableClass, InjectionToken } from 'typed-inject';
 
 import { LoggingServerAddress } from '../logging/index.js';
@@ -27,7 +27,7 @@ import {
 import { OutOfMemoryError } from './out-of-memory-error.js';
 import { ChildProcessContext } from './child-process-proxy-worker.js';
 import { IdGenerator } from './id-generator.js';
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { Logger, LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
 
 type Func<TS extends any[], R> = (...args: TS) => R;
 

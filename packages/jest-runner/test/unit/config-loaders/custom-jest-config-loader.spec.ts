@@ -4,8 +4,8 @@ import fs from 'fs';
 import type { Config } from '@jest/types';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
-import type { requireResolve } from '@stryker-mutator/util';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import type { requireResolve } from '@d-es-ign/stryker-js-util';
 
 import { CustomJestConfigLoader } from '../../../src/config-loaders/custom-jest-config-loader.js';
 import { createJestOptions } from '../../helpers/producers.js';

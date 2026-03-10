@@ -1,4 +1,4 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 
 import { StrykerTapRunnerOptions } from '../src-generated/tap-runner-options.js';
 

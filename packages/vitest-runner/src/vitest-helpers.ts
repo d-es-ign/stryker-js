@@ -4,10 +4,10 @@ import {
   BaseTestResult,
   TestResult,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { type RunMode, type RunnerTestSuite, type TaskState } from 'vitest';
 import { RunnerTestCase } from 'vitest/node';
-import { MutantCoverage } from '@stryker-mutator/api/core';
+import { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
 import { collectTestName, toRawTestId } from './test-helpers.js';
 
 function convertTaskStateToTestStatus(

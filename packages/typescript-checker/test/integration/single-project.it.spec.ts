@@ -6,10 +6,10 @@ import {
   testInjector,
   factory,
   assertions,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
-import { Location, Mutant } from '@stryker-mutator/api/core';
-import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
+import { Location, Mutant } from '@d-es-ign/stryker-js-api/core';
+import { CheckResult, CheckStatus } from '@d-es-ign/stryker-js-api/check';
 
 import { createTypescriptChecker } from '../../src/index.js';
 import { TypescriptChecker } from '../../src/typescript-checker.js';

@@ -21,10 +21,10 @@ The tap runner doesn't use [`node-tap`](https://node-tap.org/) (or similar) to r
 
 ## Install
 
-Install @stryker-mutator/tap-runner locally within your project folder, like so:
+Install @d-es-ign/stryker-js-tap-runner locally within your project folder, like so:
 
 ```shell
-npm i --save-dev @stryker-mutator/tap-runner
+npm i --save-dev @d-es-ign/stryker-js-tap-runner
 ```
 
 ## Configuring

@@ -1,6 +1,6 @@
 import sinon from 'sinon';
 import ProgressBar from 'progress';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@d-es-ign/stryker-js-test-helpers';
 
 import { progressBarWrapper } from '../../../src/reporters/progress-bar.js';
 import { ProgressBarReporter } from '../../../src/reporters/progress-reporter.js';

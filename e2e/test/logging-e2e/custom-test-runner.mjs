@@ -4,8 +4,8 @@ import {
   PluginKind,
   tokens,
   commonTokens,
-} from '@stryker-mutator/api/plugin';
-import { DryRunStatus } from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/plugin';
+import { DryRunStatus } from '@d-es-ign/stryker-js-api/test-runner';
 
 export const strykerPlugins = [
   declareClassPlugin(
@@ -16,21 +16,21 @@ export const strykerPlugins = [
 
       /**
        *
-       * @param {import('@stryker-mutator/api/logging').Logger} logger
+       * @param {import('@d-es-ign/stryker-js-api/logging').Logger} logger
        */
       constructor(logger) {
         this.logger = logger;
       }
 
       /**
-       * @returns {import('@stryker-mutator/api/test-runner').TestRunnerCapabilities}
+       * @returns {import('@d-es-ign/stryker-js-api/test-runner').TestRunnerCapabilities}
        */
       capabilities() {
         return { reloadEnvironment: true };
       }
       /**
-       * @param {import('@stryker-mutator/api/test-runner').DryRunOptions} options
-       * @returns {Promise<import('@stryker-mutator/api/test-runner').DryRunResult>}
+       * @param {import('@d-es-ign/stryker-js-api/test-runner').DryRunOptions} options
+       * @returns {Promise<import('@d-es-ign/stryker-js-api/test-runner').DryRunResult>}
        */
       dryRun(options) {
         if (this.logger.isTraceEnabled()) {
@@ -44,7 +44,7 @@ export const strykerPlugins = [
       }
 
       /**
-       * @returns {Promise<import('@stryker-mutator/api/test-runner').MutantRunResult>}
+       * @returns {Promise<import('@d-es-ign/stryker-js-api/test-runner').MutantRunResult>}
        */
       mutantRun() {
         throw new Error('Not implemented');

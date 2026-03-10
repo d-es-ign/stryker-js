@@ -1,5 +1,5 @@
-import { CheckResult } from '@stryker-mutator/api/check';
-import { MutantRunPlan } from '@stryker-mutator/api/core';
+import { CheckResult } from '@d-es-ign/stryker-js-api/check';
+import { MutantRunPlan } from '@d-es-ign/stryker-js-api/core';
 
 import { ResourceDecorator } from '../concurrent/index.js';
 

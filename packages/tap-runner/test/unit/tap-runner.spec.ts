@@ -8,8 +8,8 @@ import fs from 'fs/promises';
 
 import sinon from 'sinon';
 
-import { TestRunnerCapabilities } from '@stryker-mutator/api/test-runner';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { TestRunnerCapabilities } from '@d-es-ign/stryker-js-api/test-runner';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import * as tap from 'tap-parser';

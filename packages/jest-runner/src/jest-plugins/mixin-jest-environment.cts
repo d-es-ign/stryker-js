@@ -5,7 +5,7 @@ import type {
 } from '@jest/environment';
 import type { Circus } from '@jest/types';
 // @ts-expect-error see https://github.com/microsoft/TypeScript/issues/49721#issuecomment-1319854183
-import type { InstrumenterContext } from '@stryker-mutator/api/core';
+import type { InstrumenterContext } from '@d-es-ign/stryker-js-api/core';
 
 import { state } from './messaging.cjs';
 

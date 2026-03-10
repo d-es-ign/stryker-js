@@ -7,19 +7,19 @@ A plugin to use Jasmine **as a test runner for node** in Stryker.
 
 ## Install
 
-Install @stryker-mutator/jasmine-runner locally, like so:
+Install @d-es-ign/stryker-js-jasmine-runner locally, like so:
 
 ```bash
-npm i --save-dev @stryker-mutator/jasmine-runner
+npm i --save-dev @d-es-ign/stryker-js-jasmine-runner
 ```
 
 ## Peer dependencies
 
-The `@stryker-mutator/jasmine-runner` is a plugin for `stryker` to enable `jasmine` as a test runner.
+The `@d-es-ign/stryker-js-jasmine-runner` is a plugin for `stryker` to enable `jasmine` as a test runner.
 As such, you should make sure you have the correct versions of its dependencies installed:
 
 * `jasmine`
-* `@stryker-mutator/core`
+* `@d-es-ign/stryker-js-core`
 
 
 ## Example

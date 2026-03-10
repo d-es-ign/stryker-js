@@ -5,10 +5,10 @@ import { pathToFileURL } from 'url';
 import {
   PartialStrykerOptions,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { deepMerge, I } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { deepMerge, I } from '@d-es-ign/stryker-js-util';
 
 import { coreTokens } from '../di/index.js';
 import { ConfigError } from '../errors.js';
@@ -20,7 +20,7 @@ import { SUPPORTED_CONFIG_FILE_NAMES } from './config-file-formats.js';
 export const CONFIG_SYNTAX_HELP = `
 Example of how a config file should look:
 /**
-  * @type {import('@stryker-mutator/api/core').StrykerOptions}
+  * @type {import('@d-es-ign/stryker-js-api/core').StrykerOptions}
   */
 export default {
   // You're options here!
@@ -28,7 +28,7 @@ export default {
 
 Or using commonjs:
 /**
-  * @type {import('@stryker-mutator/api/core').StrykerOptions}
+  * @type {import('@d-es-ign/stryker-js-api/core').StrykerOptions}
   */
 module.exports = {
   // You're options here!

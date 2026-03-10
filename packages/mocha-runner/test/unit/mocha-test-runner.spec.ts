@@ -5,15 +5,15 @@ import {
   factory,
   assertions,
   tick,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import sinon from 'sinon';
 import {
   KilledMutantRunResult,
   MutantRunStatus,
   TestStatus,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
-import { Task } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { Task } from '@d-es-ign/stryker-js-util';
 
 import { MochaTestRunner } from '../../src/mocha-test-runner.js';
 import { StrykerMochaReporter } from '../../src/stryker-mocha-reporter.js';

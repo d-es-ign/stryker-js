@@ -1,4 +1,4 @@
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@d-es-ign/stryker-js-util';
 import type { Config, ConfigOptions } from 'karma';
 
 import { strykerKarmaConfigPath } from '../karma-plugins/index.js';

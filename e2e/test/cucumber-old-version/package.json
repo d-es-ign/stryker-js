@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "8.0.0",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/cucumber-runner": "workspace:*"
+    "@d-es-ign/stryker-js-core": "workspace:*",
+    "@d-es-ign/stryker-js-cucumber-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@d-es-ign/stryker-js-core": {
       "injected": true
     },
-    "@stryker-mutator/cucumber-runner": {
+    "@d-es-ign/stryker-js-cucumber-runner": {
       "injected": true
     }
   },

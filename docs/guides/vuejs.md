@@ -7,19 +7,19 @@ Stryker supports Vue projects. It can mutate both your js/ts files as the script
 
 This article will explain how to configure Stryker with [vue](https://vuejs.org/guide/quick-start.html).
 
-To get started using Stryker with vue, first install the core package: `npm i -D @stryker-mutator/core` or `yarn add --dev @stryker-mutator/core`. Next follow the guide for the Vitest runner.
+To get started using Stryker with vue, first install the core package: `npm i -D @d-es-ign/stryker-js-core` or `yarn add --dev @d-es-ign/stryker-js-core`. Next follow the guide for the Vitest runner.
 
 Keep in mind that you may have to change some configuration settings such as paths to files.
 
 ## Vitest configuration
 
-1. Install the `@stryker-mutator/vitest-runner` plugin: `npm i -D @stryker-mutator/vitest-runner` or `yarn add --dev @stryker-mutator/vitest-runner`.
+1. Install the `@d-es-ign/stryker-js-vitest-runner` plugin: `npm i -D @d-es-ign/stryker-js-vitest-runner` or `yarn add --dev @d-es-ign/stryker-js-vitest-runner`.
 1. Create a "stryker.config.json" file that looks like this:
    ```json
    {
-     "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+     "$schema": "./node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
      "testRunner": "vitest",
-     "plugins": ["@stryker-mutator/vitest-runner"]
+     "plugins": ["@d-es-ign/stryker-js-vitest-runner"]
    }
    ```
 1. Add this script to your package.json:

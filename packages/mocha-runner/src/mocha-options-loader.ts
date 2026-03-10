@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { propertyPath } from '@stryker-mutator/util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { propertyPath } from '@d-es-ign/stryker-js-util';
 
 import {
   MochaOptions,

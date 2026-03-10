@@ -1,4 +1,4 @@
-import { Disposable } from '@stryker-mutator/api/plugin';
+import { Disposable } from '@d-es-ign/stryker-js-api/plugin';
 
 import { coreTokens } from './di/index.js';
 

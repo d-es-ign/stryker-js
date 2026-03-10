@@ -4,9 +4,9 @@ import { expect } from 'chai';
 
 import sinon from 'sinon';
 
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@d-es-ign/stryker-js-util';
 
-import { tick } from '@stryker-mutator/test-helpers';
+import { tick } from '@d-es-ign/stryker-js-test-helpers';
 
 import { FileSystem } from '../../../src/fs/file-system.js';
 import { createDirent } from '../../helpers/producers.js';

@@ -11,7 +11,7 @@ import {
   tokens,
   commonTokens,
   ValuePlugin,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import { InjectableFunction, InjectableClass } from 'typed-inject';
 
 import { coreTokens } from './index.js';

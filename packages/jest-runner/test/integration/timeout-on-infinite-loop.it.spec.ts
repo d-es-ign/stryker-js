@@ -2,8 +2,8 @@ import {
   assertions,
   factory,
   testInjector,
-} from '@stryker-mutator/test-helpers';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-test-helpers';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import { expect } from 'chai';
 
 import {

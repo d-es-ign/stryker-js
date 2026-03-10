@@ -1,6 +1,6 @@
-import { MutantResult, PartialStrykerOptions } from '@stryker-mutator/api/core';
+import { MutantResult, PartialStrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import { createInjector, Injector } from 'typed-inject';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 
 import {
   PrepareExecutor,

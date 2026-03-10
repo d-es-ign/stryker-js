@@ -10,7 +10,7 @@ import {
   mergeMap,
 } from 'rxjs';
 import { toArray, map, shareReplay, tap } from 'rxjs/operators';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { tokens, commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   MutantResult,
   Mutant,
@@ -18,14 +18,14 @@ import {
   PlanKind,
   MutantTestPlan,
   MutantRunPlan,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 import {
   TestRunner,
   CompleteDryRunResult,
-} from '@stryker-mutator/api/test-runner';
-import { Logger } from '@stryker-mutator/api/logging';
-import { I } from '@stryker-mutator/util';
-import { CheckStatus } from '@stryker-mutator/api/check';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { I } from '@d-es-ign/stryker-js-util';
+import { CheckStatus } from '@d-es-ign/stryker-js-api/check';
 
 import { coreTokens } from '../di/index.js';
 import { StrictReporter } from '../reporters/strict-reporter.js';

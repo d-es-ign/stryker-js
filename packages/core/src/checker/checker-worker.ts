@@ -1,7 +1,7 @@
-import { Checker, CheckResult } from '@stryker-mutator/api/check';
-import { StrykerOptions, Mutant } from '@stryker-mutator/api/core';
-import { PluginKind, tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { StrykerError } from '@stryker-mutator/util';
+import { Checker, CheckResult } from '@d-es-ign/stryker-js-api/check';
+import { StrykerOptions, Mutant } from '@d-es-ign/stryker-js-api/core';
+import { PluginKind, tokens, commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import { StrykerError } from '@d-es-ign/stryker-js-util';
 
 import { coreTokens, PluginCreator } from '../di/index.js';
 

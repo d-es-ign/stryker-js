@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-import { TestStatus } from '@stryker-mutator/api/test-runner';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { MutationTimingsReporter } from '../../../../src/reporters/mutation-timings-reporter.js';

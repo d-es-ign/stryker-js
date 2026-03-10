@@ -1,22 +1,22 @@
-import { LoggerFactoryMethod } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   testInjector,
   assertions,
   factory,
   tick,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import { TestResults } from 'karma';
 import sinon from 'sinon';
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@d-es-ign/stryker-js-util';
 import {
   DryRunOptions,
   MutantRunOptions,
   TestRunnerCapabilities,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
-import { MutantCoverage } from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
 
 import { configureKarma } from '../../src/karma-plugins/stryker-karma.conf.js';
 import { KarmaTestRunner } from '../../src/karma-test-runner.js';

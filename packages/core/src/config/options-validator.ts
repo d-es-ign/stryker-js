@@ -3,15 +3,15 @@ import path from 'path';
 
 import { Minimatch } from 'minimatch';
 import ajvModule, { ValidateFunction } from 'ajv';
-import { StrykerOptions, strykerCoreSchema } from '@stryker-mutator/api/core';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { StrykerOptions, strykerCoreSchema } from '@d-es-ign/stryker-js-api/core';
+import { tokens, commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   noopLogger,
   findUnserializables,
   Immutable,
   deepFreeze,
-} from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@d-es-ign/stryker-js-util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import type { JSONSchema7 } from 'json-schema';
 
 import { coreTokens } from '../di/index.js';

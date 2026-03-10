@@ -22,7 +22,7 @@ This guide assumes you're using the [vitest examples](https://vitest.dev/guide/#
 
 ### Install
 
-Recommended stryker packages: `npm i -D @stryker-mutator/core @stryker-mutator/vitest-runner`
+Recommended stryker packages: `npm i -D @d-es-ign/stryker-js-core @d-es-ign/stryker-js-vitest-runner`
 
 ### Configuration
 
@@ -43,7 +43,7 @@ Using jest to test your svelte projects can be done using something like the [sv
 
 ### Install
 
-Recommended stryker packages: `npm i -D @stryker-mutator/core @stryker-mutator/jest-runner`
+Recommended stryker packages: `npm i -D @d-es-ign/stryker-js-core @d-es-ign/stryker-js-jest-runner`
 
 ### Configuration
 

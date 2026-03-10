@@ -2,14 +2,14 @@ import path from 'path';
 
 import { fileURLToPath } from 'url';
 
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { Logger, LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
 import type {
   Config,
   ConfigOptions,
   ClientOptions,
   InlinePluginType,
 } from 'karma';
-import { noopLogger, requireResolve } from '@stryker-mutator/util';
+import { noopLogger, requireResolve } from '@d-es-ign/stryker-js-util';
 
 import { StrykerReporter, strykerReporterFactory } from './stryker-reporter.js';
 import {

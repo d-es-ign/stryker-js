@@ -5,6 +5,13 @@
 ![Stryker](https://github.com/stryker-mutator/stryker-js/raw/master/stryker-80x80.png)
 
 # StrykerJS API
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
+
 This is the repository for maintaining the API of the [StrykerJS](https://stryker-mutator.io/) mutation testing framework.
 Plugin creators should depend on this API rather than on the main Stryker repository directly.
 

@@ -1,5 +1,12 @@
 # Performance tests
 
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
+
 **Experimental**
 
 Inside the `perf/test` directory you'll find some performance tests for Stryker in different use cases.

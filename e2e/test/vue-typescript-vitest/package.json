@@ -22,14 +22,14 @@
     "vite": "^6.3.5",
     "vitest": "^4.0.12",
     "vue-tsc": "^2.2.10",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/vitest-runner": "workspace:*"
+    "@d-es-ign/stryker-js-core": "workspace:*",
+    "@d-es-ign/stryker-js-vitest-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@d-es-ign/stryker-js-core": {
       "injected": true
     },
-    "@stryker-mutator/vitest-runner": {
+    "@d-es-ign/stryker-js-vitest-runner": {
       "injected": true
     }
   }

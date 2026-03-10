@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
 import { Disposable } from 'typed-inject';
 
 export class TemporaryDirectory implements Disposable {

@@ -4,13 +4,13 @@ import path from 'path';
 
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 import {
   testInjector,
   factory,
   assertions,
-} from '@stryker-mutator/test-helpers';
-import { DryRunStatus } from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-test-helpers';
+import { DryRunStatus } from '@d-es-ign/stryker-js-api/test-runner';
 
 import {
   LoggingServerAddress,

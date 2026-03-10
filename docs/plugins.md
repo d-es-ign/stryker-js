@@ -5,7 +5,7 @@ custom_edit_url: https://github.com/stryker-mutator/stryker-js/edit/master/docs/
 
 Stryker supports several plugins, which are listed below. You can also [search npm for the stryker-plugin tag](https://www.npmjs.com/search?q=stryker-plugin).
 
-Test runner and checker plugins are packaged separately; you should install them yourself. For example, if you want to use the mocha test runner you can run `npm install -D @stryker-mutator/mocha-runner`.
+Test runner and checker plugins are packaged separately; you should install them yourself. For example, if you want to use the mocha test runner you can run `npm install -D @d-es-ign/stryker-js-mocha-runner`.
 
 Don't worry about plugins if you're just getting started. The needed plugins will be installed when you're following our [getting started guide](./getting-started.md).
 
@@ -14,17 +14,17 @@ Don't worry about plugins if you're just getting started. The needed plugins wil
 A test runner plugin can hook into your test runner support coverage analysis or improve performance. If your test runner isn't listed here, you can probably still use the
 [command test runner](./configuration.md#testrunner-string).
 
-- [cucumber](./cucumber-runner.md) ([@stryker-mutator/cucumber-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/cucumber-runner))
-- [Jasmine](./jasmine-runner.md) ([@stryker-mutator/jasmine-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/jasmine-runner))
-- [Jest](./jest-runner.md) ([@stryker-mutator/jest-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/jest-runner))
-- [Karma](./karma-runner.md) ([@stryker-mutator/karma-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/karma-runner))
-- [Mocha](./mocha-runner.md) ([@stryker-mutator/mocha-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/mocha-runner))
-- [Tap](./tap-runner.md) ([@stryker-mutator/tap-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/tap-runner))
-- [Vitest](./vitest-runner.md) ([@stryker-mutator/vitest-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/vitest-runner))
+- [cucumber](./cucumber-runner.md) ([@d-es-ign/stryker-js-cucumber-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/cucumber-runner))
+- [Jasmine](./jasmine-runner.md) ([@d-es-ign/stryker-js-jasmine-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/jasmine-runner))
+- [Jest](./jest-runner.md) ([@d-es-ign/stryker-js-jest-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/jest-runner))
+- [Karma](./karma-runner.md) ([@d-es-ign/stryker-js-karma-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/karma-runner))
+- [Mocha](./mocha-runner.md) ([@d-es-ign/stryker-js-mocha-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/mocha-runner))
+- [Tap](./tap-runner.md) ([@d-es-ign/stryker-js-tap-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/tap-runner))
+- [Vitest](./vitest-runner.md) ([@d-es-ign/stryker-js-vitest-runner](https://github.com/stryker-mutator/stryker-js/tree/master/packages/vitest-runner))
 
 Removed:
 
-- ~~Web Component Tester~~ ([@stryker-mutator/wct-runner](https://github.com/stryker-mutator/stryker-js/tree/v3.3.1/packages/wct-runner)) (Removed in v4 of Stryker).
+- ~~Web Component Tester~~ ([@d-es-ign/stryker-js-wct-runner](https://github.com/stryker-mutator/stryker-js/tree/v3.3.1/packages/wct-runner)) (Removed in v4 of Stryker).
 
 After choosing your test runner plugin, install
 
@@ -47,7 +47,7 @@ Stryker already comes with the most useful reporters included:
 
 A checker plugin can _check_ a mutant before it is mutation tested. The check can _fail_ or _pass_; when a check fails, the mutant is not mutation tested.
 
-- **[TypeScript](./typescript-checker.md) (@stryker-mutator/typescript-checker)**: This checker will check each mutant for typescript compile errors.
+- **[TypeScript](./typescript-checker.md) (@d-es-ign/stryker-js-typescript-checker)**: This checker will check each mutant for typescript compile errors.
 
 ## Ignorers
 

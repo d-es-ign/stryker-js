@@ -1,5 +1,5 @@
-import { CheckStatus } from '@stryker-mutator/api/check';
-import { factory } from '@stryker-mutator/test-helpers';
+import { CheckStatus } from '@d-es-ign/stryker-js-api/check';
+import { factory } from '@d-es-ign/stryker-js-test-helpers';
 
 import { expect } from 'chai';
 import sinon from 'sinon';

@@ -1,9 +1,9 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "reporters": ["html", "json", "progress"],
   "testRunner": "jest",
   "concurrency": 2,
   "testRunnerNodeArgs": ["--experimental-vm-modules"],
   "timeoutMS": 60000,
-  "plugins": ["@stryker-mutator/jest-runner"]
+  "plugins": ["@d-es-ign/stryker-js-jest-runner"]
 }

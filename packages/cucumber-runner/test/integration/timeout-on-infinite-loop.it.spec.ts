@@ -5,7 +5,7 @@ import {
   factory,
   assertions,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';

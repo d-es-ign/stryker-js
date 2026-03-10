@@ -1,4 +1,4 @@
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { KarmaRunnerOptionsWithStrykerOptions } from '../../../src/karma-runner-options-with-stryker-options.js';

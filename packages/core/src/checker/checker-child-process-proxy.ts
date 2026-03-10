@@ -4,7 +4,7 @@ import {
   FileDescriptions,
   Mutant,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 import { Disposable } from 'typed-inject';
 
 import { ChildProcessProxy } from '../child-proxy/child-process-proxy.js';
@@ -14,7 +14,7 @@ import { IdGenerator } from '../child-proxy/id-generator.js';
 import { CheckerWorker } from './checker-worker.js';
 import { CheckerResource } from './checker-resource.js';
 import { LoggingServerAddress } from '../logging/index.js';
-import { LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { LoggerFactoryMethod } from '@d-es-ign/stryker-js-api/logging';
 
 export class CheckerChildProcessProxy
   implements CheckerResource, Disposable, Resource

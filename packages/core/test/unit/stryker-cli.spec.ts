@@ -6,11 +6,11 @@ import {
   StrykerOptions,
   ReportType,
   PartialStrykerOptions,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 
 import { guardMinimalNodeVersion, StrykerCli } from '../../src/stryker-cli.js';
 import { Injector } from 'typed-inject';
-import { factory, tick } from '@stryker-mutator/test-helpers';
+import { factory, tick } from '@d-es-ign/stryker-js-test-helpers';
 import { coreTokens } from '../../src/di/index.js';
 import { LoggingBackend } from '../../src/logging/logging-backend.js';
 import { LoggingServer } from '../../src/logging/logging-server.js';

@@ -29,8 +29,8 @@ assignees: ''
 <!-- Please list your stryker plugins + versions here (output of `npm ls | grep stryker` or `npm ls | findstr "stryker"` on Windows) -->
 
 ```
-+-- @stryker-mutator/core@x.x.x
-+-- @stryker-mutator/xxx-xxx@x.x.x
++-- @d-es-ign/stryker-js-core@x.x.x
++-- @d-es-ign/stryker-js-xxx-xxx@x.x.x
 ```
 
 <!-- Please also add the test runner you are using.  Examples:-->

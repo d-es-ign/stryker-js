@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import type { requireResolve } from '@stryker-mutator/util';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import type { requireResolve } from '@d-es-ign/stryker-js-util';
 import type * as jestModule from 'jest';
 
 import { JestRunnerOptionsWithStrykerOptions } from '../jest-runner-options-with-stryker-options.js';

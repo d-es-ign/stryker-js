@@ -3,10 +3,10 @@ import path from 'path';
 
 import { createRequire } from 'module';
 
-import { schema, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+import { schema, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 
 import { pathToFileURL } from 'url';
 import { reporterUtil } from './reporter-util.js';

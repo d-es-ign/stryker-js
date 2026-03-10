@@ -5,8 +5,8 @@ import {
   factory,
   tick,
   createFakeTick,
-} from '@stryker-mutator/test-helpers';
-import { Reporter } from '@stryker-mutator/api/report';
+} from '@d-es-ign/stryker-js-test-helpers';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 import {
   TestRunner,
   MutantRunOptions,
@@ -14,8 +14,8 @@ import {
   MutantRunStatus,
   CompleteDryRunResult,
   TestResult,
-} from '@stryker-mutator/api/test-runner';
-import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { CheckResult, CheckStatus } from '@d-es-ign/stryker-js-api/check';
 import { mergeMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import {
@@ -24,8 +24,8 @@ import {
   MutantEarlyResultPlan,
   MutantRunPlan,
   MutantTestPlan,
-} from '@stryker-mutator/api/core';
-import { I, Task } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/core';
+import { I, Task } from '@d-es-ign/stryker-js-util';
 
 import { MutationTestExecutor } from '../../../src/process/index.js';
 import { coreTokens } from '../../../src/di/index.js';

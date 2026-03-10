@@ -1,9 +1,9 @@
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   assertions,
   factory,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { JestOptions } from '../../src-generated/jest-runner-options.js';

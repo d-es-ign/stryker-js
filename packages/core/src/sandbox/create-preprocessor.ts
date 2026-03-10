@@ -3,9 +3,9 @@ import {
   Injector,
   commonTokens,
   PluginContext,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 
-import { disableTypeChecks } from '@stryker-mutator/instrumenter';
+import { disableTypeChecks } from '@d-es-ign/stryker-js-instrumenter';
 
 import { coreTokens } from '../di/index.js';
 

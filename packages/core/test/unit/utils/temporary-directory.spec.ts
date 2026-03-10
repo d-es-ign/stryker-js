@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import sinon from 'sinon';
 
 import { TemporaryDirectory } from '../../../src/utils/temporary-directory.js';

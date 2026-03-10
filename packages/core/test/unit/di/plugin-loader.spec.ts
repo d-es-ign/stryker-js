@@ -3,10 +3,10 @@ import { syncBuiltinESMExports } from 'module';
 import path from 'path';
 import { pathToFileURL } from 'url';
 
-import { Plugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { Plugin, PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { PluginLoader } from '../../../src/di/index.js';
 import { fileUtils } from '../../../src/utils/file-utils.js';
@@ -53,10 +53,8 @@ describe(PluginLoader.name, () => {
 
   it('should resolve plugins matching a wildcard inside an organization from the `node_modules` directory', async () => {
     readdirStub.resolves([]);
-    await sut.load(['@stryker-mutator/*']);
-    expect(readdirStub).calledWith(
-      resolveFromRoot('..', '..', '@stryker-mutator'),
-    );
+    await sut.load(['@d-es-ign/stryker-js-*']);
+    expect(readdirStub).calledWith(resolveFromRoot('..', '..', '@d-es-ign'));
   });
 
   it('should resolve plugins matching a wildcard from the `node_modules` directory', async () => {
@@ -80,13 +78,13 @@ describe(PluginLoader.name, () => {
       'typescript-checker',
       'karma-runner',
     ]);
-    await sut.load(['@stryker-mutator/*']);
+    await sut.load(['@d-es-ign/stryker-js-*']);
     expect(fileUtils.importModule).calledTwice;
     expect(fileUtils.importModule).calledWithExactly(
-      '@stryker-mutator/typescript-checker',
+      '@d-es-ign/stryker-js-typescript-checker',
     );
     expect(fileUtils.importModule).calledWithExactly(
-      '@stryker-mutator/karma-runner',
+      '@d-es-ign/stryker-js-karma-runner',
     );
     expect(testInjector.logger.warn).not.called;
   });

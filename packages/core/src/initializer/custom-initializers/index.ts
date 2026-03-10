@@ -2,8 +2,8 @@ import {
   BaseContext,
   commonTokens,
   Injector,
-} from '@stryker-mutator/api/plugin';
-import type { resolveFromCwd } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/plugin';
+import type { resolveFromCwd } from '@d-es-ign/stryker-js-util';
 
 import { coreTokens } from '../../di/index.js';
 

@@ -1,9 +1,9 @@
-import Stryker from '@stryker-mutator/core';
+import Stryker from '@d-es-ign/stryker-js-core';
 
 new Stryker({
   testRunner: 'mocha',
   concurrency: 1,
-  plugins: ['@stryker-mutator/mocha-runner'],
+  plugins: ['@d-es-ign/stryker-js-mocha-runner'],
 }).runMutationTest().then(() => console.log('done')).catch(err => {
   console.error(err);
   process.exitCode = 1;

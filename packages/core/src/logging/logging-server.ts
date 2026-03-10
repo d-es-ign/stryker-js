@@ -2,9 +2,9 @@ import { coreTokens } from '../di/index.js';
 import { LoggingEvent, SerializedLoggingEvent } from './logging-event.js';
 import { LoggingSink } from './logging-sink.js';
 import net from 'node:net';
-import { Disposable } from '@stryker-mutator/api/plugin';
+import { Disposable } from '@d-es-ign/stryker-js-api/plugin';
 import { promisify } from 'node:util';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 
 export interface LoggingServerAddress {
   port: number;

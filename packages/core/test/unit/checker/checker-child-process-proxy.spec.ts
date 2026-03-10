@@ -1,7 +1,7 @@
 import { URL } from 'url';
 
-import { FileDescriptions } from '@stryker-mutator/api/core';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { FileDescriptions } from '@d-es-ign/stryker-js-api/core';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import sinon from 'sinon';
 
 import { CheckerChildProcessProxy } from '../../../src/checker/checker-child-process-proxy.js';

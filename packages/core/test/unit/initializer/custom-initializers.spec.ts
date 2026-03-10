@@ -4,9 +4,9 @@ import os from 'os';
 import sinon from 'sinon';
 import { expect } from 'chai';
 import type { execaCommand, Result } from 'execa';
-import { testInjector } from '@stryker-mutator/test-helpers';
-import type { resolveFromCwd } from '@stryker-mutator/util';
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import type { resolveFromCwd } from '@d-es-ign/stryker-js-util';
+import { PartialStrykerOptions } from '@d-es-ign/stryker-js-api/core';
 
 import { coreTokens } from '../../../src/di/index.js';
 
@@ -230,7 +230,7 @@ describe('CustomInitializers', () => {
           testRunner: 'vitest',
           reporters: ['progress', 'clear-text', 'html'],
         },
-        dependencies: ['@stryker-mutator/vitest-runner'],
+        dependencies: ['@d-es-ign/stryker-js-vitest-runner'],
         guideUrl,
       };
       expect(actualCustomInit).deep.eq(expected);
@@ -258,7 +258,7 @@ describe('CustomInitializers', () => {
           testRunnerNodeArgs: ['--experimental-vm-modules'],
           reporters: ['progress', 'clear-text', 'html'],
         },
-        dependencies: ['@stryker-mutator/jest-runner'],
+        dependencies: ['@d-es-ign/stryker-js-jest-runner'],
         guideUrl,
       };
       expect(actualCustomInit).deep.eq(expected);
@@ -284,9 +284,9 @@ describe('CustomInitializers', () => {
       expect(sut.name).to.eq('vue');
     });
 
-    it('should install @stryker-mutator/vitest-runner when jest is chosen', async () => {
+    it('should install @d-es-ign/stryker-js-vitest-runner when jest is chosen', async () => {
       const config = await sut.createConfig();
-      expect(config.dependencies).to.include('@stryker-mutator/vitest-runner');
+      expect(config.dependencies).to.include('@d-es-ign/stryker-js-vitest-runner');
     });
   });
 });

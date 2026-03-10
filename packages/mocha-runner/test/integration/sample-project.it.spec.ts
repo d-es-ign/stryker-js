@@ -5,12 +5,12 @@ import {
   factory,
   assertions,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import {
   TestResult,
   CompleteDryRunResult,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { expect } from 'chai';
 
 import { createMochaOptions } from '../helpers/factories.js';

@@ -5,14 +5,14 @@ import {
   commonTokens,
   PluginContext,
   PluginKind,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   createInstrumenter,
   InstrumentResult,
-} from '@stryker-mutator/instrumenter';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Reporter } from '@stryker-mutator/api/report';
-import { I } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-instrumenter';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
+import { I } from '@d-es-ign/stryker-js-util';
 
 import { coreTokens, PluginCreator } from '../di/index.js';
 import { Sandbox } from '../sandbox/sandbox.js';

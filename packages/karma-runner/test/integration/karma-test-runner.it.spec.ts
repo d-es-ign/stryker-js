@@ -6,12 +6,12 @@ import {
   CompleteDryRunResult,
   TestResult,
   FailedTestResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   testInjector,
   assertions,
   factory,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import { FilePattern } from 'karma';
 

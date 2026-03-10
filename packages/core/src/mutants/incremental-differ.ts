@@ -10,17 +10,17 @@ import {
   StrykerOptions,
   FileDescriptions,
   MutateDescription,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { TestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { TestResult, TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
 import {
   I,
   normalizeFileName,
   normalizeLineEndings,
   notEmpty,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import { TestDefinition } from 'mutation-testing-report-schema';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 
 import {
   DiffChange,

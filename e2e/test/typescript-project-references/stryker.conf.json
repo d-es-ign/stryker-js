@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "packageManager": "npm",
   "disableTypeChecks": true,
   "testRunner": "mocha",
@@ -10,7 +10,7 @@
   "fileLogLevel": "warn",
   "buildCommand": "npm run build",
   "plugins": [
-    "@stryker-mutator/mocha-runner",
-    "@stryker-mutator/typescript-checker"
+    "@d-es-ign/stryker-js-mocha-runner",
+    "@d-es-ign/stryker-js-typescript-checker"
   ]
 }

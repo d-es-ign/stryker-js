@@ -4,10 +4,10 @@ import {
   DryRunStatus,
   TestResult,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
-import { MutantCoverage } from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
 import type karma from 'karma';
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@d-es-ign/stryker-js-util';
 
 export interface KarmaSpec {
   description: string;

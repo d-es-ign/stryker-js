@@ -22,16 +22,16 @@ Each plugin has its own job to do. For inspiration, check out the [stryker monor
 
 Creating plugins is best done with typescript, which will help you immensely with type safety and intellisense.
 
-We provide the `@stryker-mutator/api` dependency on the types and basic helper functionality. You can install this as a dependency on your plugin. 
+We provide the `@d-es-ign/stryker-js-api` dependency on the types and basic helper functionality. You can install this as a dependency on your plugin. 
 
 ```shell
-npm install @stryker-mutator/api
+npm install @d-es-ign/stryker-js-api
 ```
 
 Next, you must create a class that _is the actual plugin_. For example:
 
 ```ts
-import { TestRunner, DryRunResult, DryRunOptions, MutantRunOptions, MutantRunResult } from '@stryker-mutator/api/test-runner';
+import { TestRunner, DryRunResult, DryRunOptions, MutantRunOptions, MutantRunResult } from '@d-es-ign/stryker-js-api/test-runner';
 
 class FooTestRunner implements TestRunner {
   public init(): Promise<void> {
@@ -66,7 +66,7 @@ A class example:
 ```ts
 // index.ts
 import FooTestRunner from './foo-test-runner';
-import { PluginKind, declareClassPlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareClassPlugin } from '@d-es-ign/stryker-js-api/plugin';
 
 export const strykerPlugins = [declareClassPlugin(PluginKind.TestRunner, 'foo', FooTestRunner)];
 ```
@@ -75,7 +75,7 @@ A factory method example (useful when you want to inject additional values/class
 
 ```ts
 // index.ts
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 import FooTestRunner from './foo-test-runner.js';
 import FooTestRunnerConfigFileLoader from './foo-test-runner-config-file-loader.js';
 import { configLoaderToken, processEnvToken } from './plugin-tokens.js';
@@ -100,7 +100,7 @@ A value example (practical for simple plugins, like an [ignore-plugin](../disabl
 
 ```ts
 // index.ts
-import { declareValuePlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareValuePlugin, PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 
 export const strykerPlugins = [declareValuePlugin(PluginKind.Ignore, 'console', {
   shouldIgnore(path) {
@@ -134,7 +134,7 @@ For example, when your test project resides next to your plugin implementation:
   // name your reporter
   "reporters": ["progress", "my-reporter"], 
   // load your test runner, reporter or checker plugin here
-  "plugins": ["@stryker-mutator/*", "../my-plugin"], 
+  "plugins": ["@d-es-ign/stryker-js-*", "../my-plugin"], 
   // useful for debugging your 
   "concurrency": 1, 
   // useful for debugging your test runner plugin
@@ -165,10 +165,10 @@ It would help to use this as your DI framework inside the plugin.
 Please take a look at this example below. 
 
 ```ts
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, PluginContext } from '@stryker-mutator/api/plugin';
-import { TestRunner, DryRunResult, DryRunOptions, MutantRunOptions, MutantRunResult, TestRunnerCapabilities } from '@stryker-mutator/api/test-runner';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, PluginContext } from '@d-es-ign/stryker-js-api/plugin';
+import { TestRunner, DryRunResult, DryRunOptions, MutantRunOptions, MutantRunResult, TestRunnerCapabilities } from '@d-es-ign/stryker-js-api/test-runner';
 import * as pluginTokens from './plugin-tokens';
 import FooTestRunnerConfigFileLoader from './foo-test-runner-config-file-loader';
 

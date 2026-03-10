@@ -1,6 +1,6 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { commonTokens, Injector, tokens } from '@stryker-mutator/api/plugin';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { commonTokens, Injector, tokens } from '@d-es-ign/stryker-js-api/plugin';
 import semver, { SemVer } from 'semver';
 
 import { JestPluginContext, pluginTokens } from '../plugin-di.js';
@@ -42,12 +42,12 @@ function guardJestVersion(
 ) {
   if (semver.satisfies(version, '<22.0.0')) {
     throw new Error(
-      `You need Jest version >= 22.0.0 to use the @stryker-mutator/jest-runner plugin, found ${raw}`,
+      `You need Jest version >= 22.0.0 to use the @d-es-ign/stryker-js-jest-runner plugin, found ${raw}`,
     );
   } else if (semver.satisfies(version, '<24')) {
     if (options.coverageAnalysis !== 'off') {
       throw new Error(
-        `You need Jest version >= 24.0.0 to use the @stryker-mutator/jest-runner with "coverageAnalysis": "${options.coverageAnalysis}", you're currently using version 23.0.0. Please upgrade your jest version, or set "coverageAnalysis": "off".`,
+        `You need Jest version >= 24.0.0 to use the @d-es-ign/stryker-js-jest-runner with "coverageAnalysis": "${options.coverageAnalysis}", you're currently using version 23.0.0. Please upgrade your jest version, or set "coverageAnalysis": "off".`,
       );
     }
     log.warn(

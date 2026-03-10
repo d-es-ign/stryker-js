@@ -1,5 +1,5 @@
-import { TestResult } from '@stryker-mutator/api/test-runner';
-import { I } from '@stryker-mutator/util';
+import { TestResult } from '@d-es-ign/stryker-js-api/test-runner';
+import { I } from '@d-es-ign/stryker-js-util';
 
 import { TestCoverage } from '../../src/mutants/index.js';
 

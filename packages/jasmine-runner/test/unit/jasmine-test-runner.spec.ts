@@ -5,16 +5,16 @@ import {
   assertions,
   testInjector,
   createFakeTick,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import {
   TestStatus,
   CompleteDryRunResult,
   DryRunStatus,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import jasmine from 'jasmine';
-import { MutantCoverage } from '@stryker-mutator/api/core';
-import { Task } from '@stryker-mutator/util';
+import { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
+import { Task } from '@d-es-ign/stryker-js-util';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';
 import { helpers } from '../../src/helpers.js';

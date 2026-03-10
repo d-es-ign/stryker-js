@@ -1,10 +1,10 @@
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 import {
   LoggingEvent,
   SerializedLoggingEvent,
 } from '../../../src/logging/logging-event.js';
 import { expect } from 'chai';
-import { escapeRegExp } from '@stryker-mutator/util';
+import { escapeRegExp } from '@d-es-ign/stryker-js-util';
 
 describe(LoggingEvent.name, () => {
   describe(LoggingEvent.prototype.format.name, () => {

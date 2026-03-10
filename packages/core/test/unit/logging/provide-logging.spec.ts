@@ -1,7 +1,7 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import { commonTokens, Injector } from '@stryker-mutator/api/plugin';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import { commonTokens, Injector } from '@d-es-ign/stryker-js-api/plugin';
 import {
   LoggingBackend,
   LoggingSink,
@@ -15,7 +15,7 @@ import {
   LoggingServerAddress,
 } from '../../../src/logging/logging-server.js';
 import { LoggingClient } from '../../../src/logging/logging-client.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 
 describe('Provide logging', () => {
   describe(provideLoggingBackend.name, () => {

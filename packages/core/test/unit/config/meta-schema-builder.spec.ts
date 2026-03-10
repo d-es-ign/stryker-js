@@ -1,7 +1,7 @@
 import type { JSONSchema7 } from 'json-schema';
 import { expect } from 'chai';
-import { deepFreeze } from '@stryker-mutator/util';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { deepFreeze } from '@d-es-ign/stryker-js-util';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { MetaSchemaBuilder } from '../../../src/config/index.js';
 import { coreTokens } from '../../../src/di/index.js';

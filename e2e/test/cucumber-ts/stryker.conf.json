@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "testRunner": "cucumber",
   "concurrency": 2,
   "timeoutMS": 20000,
@@ -9,6 +9,6 @@
     "html"
   ],
   "plugins": [
-    "@stryker-mutator/cucumber-runner"
+    "@d-es-ign/stryker-js-cucumber-runner"
   ]
 }

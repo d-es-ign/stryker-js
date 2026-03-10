@@ -6,11 +6,11 @@ import {
   MutantRunResult,
   MutantRunStatus,
   TestRunner,
-} from '@stryker-mutator/api/test-runner';
-import { ExpirableTask } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { ExpirableTask } from '@d-es-ign/stryker-js-util';
 
 import { TestRunnerDecorator } from './test-runner-decorator.js';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 
 /**
  * Wraps a test runner and implements the timeout functionality.

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { HtmlReporter } from '../../../../src/reporters/html-reporter.js';

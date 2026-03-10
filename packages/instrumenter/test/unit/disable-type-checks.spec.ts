@@ -1,4 +1,4 @@
-import { assertions } from '@stryker-mutator/test-helpers';
+import { assertions } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { disableTypeChecks, File } from '../../src/index.js';

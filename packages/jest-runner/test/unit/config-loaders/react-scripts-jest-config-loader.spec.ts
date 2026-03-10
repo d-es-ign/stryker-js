@@ -2,8 +2,8 @@ import path from 'path';
 
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
-import type { requireResolve } from '@stryker-mutator/util';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import type { requireResolve } from '@d-es-ign/stryker-js-util';
 
 import { ReactScriptsJestConfigLoader } from '../../../src/config-loaders/react-scripts-jest-config-loader.js';
 import { pluginTokens } from '../../../src/plugin-di.js';

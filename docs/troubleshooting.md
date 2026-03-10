@@ -46,7 +46,7 @@ Another cause might be that you're using TypeScript lower then v3.7. In that cas
 
 ### No tests executed - Jest runner
 
-You might run into issues like this when using the `@stryker-mutator/jest-runner`:
+You might run into issues like this when using the `@d-es-ign/stryker-js-jest-runner`:
 
 > ```
 > No tests found, exiting with code 1
@@ -67,7 +67,7 @@ See [#1691](https://github.com/stryker-mutator/stryker-js/issues/1691) for more 
 
 ### All mutants survive - Jest runner
 
-When running with the `@stryker-mutator/jest-runner` on windows you might run into the issue where all mutants survive unexpectedly:
+When running with the `@d-es-ign/stryker-js-jest-runner` on windows you might run into the issue where all mutants survive unexpectedly:
 
 > ```
 > [...]
@@ -135,7 +135,7 @@ Type 'any[][]' is not assignable to type 'ComponentData[]'.
 
 **Solution**:
 
-To solve that, you need to add a [typescript-checker plugin](./typescript-checker.md#configuring) to StrykerJS. Install it with `npm install --save-dev @stryker-mutator/typescript-checker` and then add the following options to your stryker's config file:
+To solve that, you need to add a [typescript-checker plugin](./typescript-checker.md#configuring) to StrykerJS. Install it with `npm install --save-dev @d-es-ign/stryker-js-typescript-checker` and then add the following options to your stryker's config file:
 
 ```
 {
@@ -291,7 +291,7 @@ This shouldn't change anything about your Angular project. You're just being a b
 
 **Symptom**
 
-Stryker is unable to load plugins (like `@stryker-mutator/typescript-checker`) when using pnpm as package manager.
+Stryker is unable to load plugins (like `@d-es-ign/stryker-js-typescript-checker`) when using pnpm as package manager.
 You might run into errors like:
 
 ```
@@ -301,7 +301,7 @@ Cannot find TestRunner plugin "mocha". No TestRunner plugins were loaded.
 **Problem**
 
 When using npm or yarn as package manager, Stryker can automagically load plugins by scanning your `node_modules`.
-Because _pnpm_ uses a special directory structure to store dependencies, Stryker can't auto-detect plugins like the `@stryker-mutator/typescript-checker` plugin.
+Because _pnpm_ uses a special directory structure to store dependencies, Stryker can't auto-detect plugins like the `@d-es-ign/stryker-js-typescript-checker` plugin.
 
 **Solution**
 
@@ -313,8 +313,8 @@ Explicitly specify the plugins to load in your Stryker configuration file.
   "testRunner": "jest",
   "checkers": ["typescript"],
 +  "plugins": [
-+    "@stryker-mutator/jest-runner",
-+    "@stryker-mutator/typescript-checker"
++    "@d-es-ign/stryker-js-jest-runner",
++    "@d-es-ign/stryker-js-typescript-checker"
 +  ]
 }
 ```
@@ -370,7 +370,7 @@ To keep using `module-alias`, there are 2 workarounds:
 
 **Symptom**
 
-When using the `@stryker-mutator/vitest-runner` you might run into the issue where Vitest fails to find test files related to mutated files, failing the initial test run.
+When using the `@d-es-ign/stryker-js-vitest-runner` you might run into the issue where Vitest fails to find test files related to mutated files, failing the initial test run.
 
 ```
 INFO DryRunExecutor Starting initial test run (vitest test runner with "perTest" coverage analysis). This may take a while.

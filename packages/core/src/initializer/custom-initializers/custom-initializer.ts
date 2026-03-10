@@ -1,5 +1,5 @@
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
-import { Immutable } from '@stryker-mutator/util';
+import { PartialStrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Immutable } from '@d-es-ign/stryker-js-util';
 
 export interface CustomInitializer {
   readonly name: string;

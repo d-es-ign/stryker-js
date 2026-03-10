@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { MochaOptionsLoader } from '../../src/mocha-options-loader.js';
 import { MochaRunnerWithStrykerOptions } from '../../src/mocha-runner-with-stryker-options.js';

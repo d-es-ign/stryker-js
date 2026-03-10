@@ -5,8 +5,8 @@ import {
   Plugin,
   PluginKind,
   ValuePlugin,
-} from '@stryker-mutator/api/plugin';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-api/plugin';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 
 import { coreTokens, PluginCreator } from '../../../src/di/index.js';
 

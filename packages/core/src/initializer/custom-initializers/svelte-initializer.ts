@@ -33,7 +33,7 @@ export class SvelteInitializer implements CustomInitializer {
         ...(testRunnerNodeArgs.length ? { testRunnerNodeArgs } : {}),
         reporters,
       },
-      dependencies: [`@stryker-mutator/${testRunner}-runner`],
+      dependencies: [`@d-es-ign/stryker-js-${testRunner}-runner`],
       guideUrl,
     };
   }

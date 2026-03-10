@@ -6,16 +6,16 @@ import {
   MutantResult,
   schema,
   MutantStatus,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 import {
   I,
   normalizeFileName,
   normalizeWhitespaces,
   type requireResolve,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import {
   calculateMutationTestMetrics,
   MutationTestMetricsResult,
@@ -24,12 +24,12 @@ import {
   MutantRunResult,
   MutantRunStatus,
   TestResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   CheckStatus,
   PassedCheckResult,
   CheckResult,
-} from '@stryker-mutator/api/check';
+} from '@d-es-ign/stryker-js-api/check';
 
 import { strykerVersion } from '../stryker-package.js';
 import { coreTokens } from '../di/index.js';
@@ -384,11 +384,11 @@ export class MutationTestReportHelper {
       }
     };
     const dependencies = [
-      '@stryker-mutator/mocha-runner',
-      '@stryker-mutator/karma-runner',
-      '@stryker-mutator/jasmine-runner',
-      '@stryker-mutator/jest-runner',
-      '@stryker-mutator/typescript-checker',
+      '@d-es-ign/stryker-js-mocha-runner',
+      '@d-es-ign/stryker-js-karma-runner',
+      '@d-es-ign/stryker-js-jasmine-runner',
+      '@d-es-ign/stryker-js-jest-runner',
+      '@d-es-ign/stryker-js-typescript-checker',
       'karma',
       'karma-chai',
       'karma-chrome-launcher',

@@ -6,6 +6,13 @@
 
 # StrykerJS Jest Runner
 
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
+
 A plugin to use [Jest](https://jestjs.io/) as a test runner in [StrykerJS](https://stryker-mutator.io), the JavaScript mutation testing framework.
 
 [See the Jest Runner's documentation on stryker-mutator.io](https://stryker-mutator.io/docs/stryker-js/jest-runner).

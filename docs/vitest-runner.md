@@ -9,19 +9,19 @@ A plugin to use the [vitest](https://vitest.dev/) test runner in Stryker.
 
 ## Install
 
-Install `@stryker-mutator/vitest-runner` locally within your project folder, like so:
+Install `@d-es-ign/stryker-js-vitest-runner` locally within your project folder, like so:
 
 ```bash
-npm i --save-dev @stryker-mutator/vitest-runner
+npm i --save-dev @d-es-ign/stryker-js-vitest-runner
 ```
 
 ## Bring your own test runner
 
-This plugin does not come packaged with it's own version of `vitest`, instead install your own version of `vitest` in your project. See [`@stryker-mutator/vitest-runner`'s package.json file](https://github.com/stryker-mutator/stryker-js/blob/master/packages/vitest-runner/package.json#L52) to discover the minimal required version of `vitest`.
+This plugin does not come packaged with it's own version of `vitest`, instead install your own version of `vitest` in your project. See [`@d-es-ign/stryker-js-vitest-runner`'s package.json file](https://github.com/stryker-mutator/stryker-js/blob/master/packages/vitest-runner/package.json#L52) to discover the minimal required version of `vitest`.
 
 ## Configuring
 
-You can configure the `@stryker-mutator/vitest-runner` using the `stryker.config.json` (or `stryker.config.js`) config file.
+You can configure the `@d-es-ign/stryker-js-vitest-runner` using the `stryker.config.json` (or `stryker.config.js`) config file.
 
 ```json
 {

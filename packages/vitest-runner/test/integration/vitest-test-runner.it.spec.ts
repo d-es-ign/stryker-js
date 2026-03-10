@@ -5,9 +5,9 @@ import {
   assertions,
   testInjector,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
+import { TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
 
 import {
   createVitestTestRunnerFactory,

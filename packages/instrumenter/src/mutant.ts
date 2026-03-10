@@ -4,7 +4,7 @@ import {
   Mutant as ApiMutant,
   Location,
   Position,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 
 import { deepCloneNode, eqNode } from './util/index.js';
 

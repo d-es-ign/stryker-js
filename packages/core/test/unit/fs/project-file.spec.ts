@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MutateDescription } from '@stryker-mutator/api/core';
-import { File } from '@stryker-mutator/instrumenter';
+import { MutateDescription } from '@d-es-ign/stryker-js-api/core';
+import { File } from '@d-es-ign/stryker-js-instrumenter';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

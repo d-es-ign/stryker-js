@@ -5,10 +5,17 @@
 
 # Grunt-stryker
 
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
+
 For more info on stryker, please visit [stryker-mutator.io](https://stryker-mutator.io).
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5` and @stryker-mutator/core `^1.0.0`.
+This plugin requires Grunt `~0.4.5` and @d-es-ign/stryker-js-core `^1.0.0`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin using the following commands:
 

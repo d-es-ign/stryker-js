@@ -12,16 +12,16 @@
     "@babel/preset-env": "7.29.0",
     "@babel/preset-flow": "7.27.1",
     "@cucumber/cucumber": "12.6.0",
-    "@stryker-mutator/api": "workspace:*",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/cucumber-runner": "workspace:*",
-    "@stryker-mutator/jasmine-runner": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*",
-    "@stryker-mutator/karma-runner": "workspace:*",
-    "@stryker-mutator/mocha-runner": "workspace:*",
-    "@stryker-mutator/tap-runner": "workspace:*",
-    "@stryker-mutator/typescript-checker": "workspace:*",
-    "@stryker-mutator/vitest-runner": "workspace:*",
+    "@d-es-ign/stryker-js-api": "workspace:*",
+    "@d-es-ign/stryker-js-core": "workspace:*",
+    "@d-es-ign/stryker-js-cucumber-runner": "workspace:*",
+    "@d-es-ign/stryker-js-jasmine-runner": "workspace:*",
+    "@d-es-ign/stryker-js-jest-runner": "workspace:*",
+    "@d-es-ign/stryker-js-karma-runner": "workspace:*",
+    "@d-es-ign/stryker-js-mocha-runner": "workspace:*",
+    "@d-es-ign/stryker-js-tap-runner": "workspace:*",
+    "@d-es-ign/stryker-js-typescript-checker": "workspace:*",
+    "@d-es-ign/stryker-js-vitest-runner": "workspace:*",
     "@sveltejs/adapter-auto": "7.0.1",
     "@sveltejs/kit": "2.53.0",
     "@sveltejs/vite-plugin-svelte": "6.2.4",
@@ -49,7 +49,7 @@
     "enzyme-to-json": "3.6.2",
     "execa": "9.6.1",
     "grunt": "1.6.1",
-    "grunt-stryker": "workspace:*",
+    "@d-es-ign/stryker-js-grunt-stryker": "workspace:*",
     "jasmine": "6.1.0",
     "jasmine-core": "6.1.0",
     "jest": "30.2.0",
@@ -87,37 +87,37 @@
     "webpack-cli": "6.0.1"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/api": {
+    "@d-es-ign/stryker-js-api": {
       "injected": true
     },
-    "@stryker-mutator/core": {
+    "@d-es-ign/stryker-js-core": {
       "injected": true
     },
-    "@stryker-mutator/jasmine-runner": {
+    "@d-es-ign/stryker-js-jasmine-runner": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@d-es-ign/stryker-js-jest-runner": {
       "injected": true
     },
-    "@stryker-mutator/karma-runner": {
+    "@d-es-ign/stryker-js-karma-runner": {
       "injected": true
     },
-    "@stryker-mutator/mocha-runner": {
+    "@d-es-ign/stryker-js-mocha-runner": {
       "injected": true
     },
-    "@stryker-mutator/cucumber-runner": {
+    "@d-es-ign/stryker-js-cucumber-runner": {
       "injected": true
     },
-    "@stryker-mutator/tap-runner": {
+    "@d-es-ign/stryker-js-tap-runner": {
       "injected": true
     },
-    "@stryker-mutator/typescript-checker": {
+    "@d-es-ign/stryker-js-typescript-checker": {
       "injected": true
     },
-    "@stryker-mutator/vitest-runner": {
+    "@d-es-ign/stryker-js-vitest-runner": {
       "injected": true
     },
-    "grunt-stryker": {
+    "@d-es-ign/stryker-js-grunt-stryker": {
       "injected": true
     }
   },

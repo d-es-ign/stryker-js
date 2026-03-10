@@ -18,7 +18,7 @@ Both scenarios are supported, however using just-in-time transpiling during muta
 
 If you manage your code's compilation through a `tsconfig.json` file, this guide ensures that your TypeScript code uses that configuration.
 
-> This guide does not cover using `@stryker-mutator/typescript-checker`. Please review the page [here](../typescript-checker.md) if you want to include the typescript checker.
+> This guide does not cover using `@d-es-ign/stryker-js-typescript-checker`. Please review the page [here](../typescript-checker.md) if you want to include the typescript checker.
 
 ## Configuration
 

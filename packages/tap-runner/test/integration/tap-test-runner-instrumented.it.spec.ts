@@ -4,7 +4,7 @@ import {
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 
 import { createTapTestRunnerFactory, TapTestRunner } from '../../src/index.js';
 import { TapRunnerOptionsWithStrykerOptions } from '../../src/tap-runner-options-with-stryker-options.js';

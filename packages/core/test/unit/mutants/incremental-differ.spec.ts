@@ -1,9 +1,9 @@
 import path from 'path';
 
-import { Mutant, MutantStatus, schema } from '@stryker-mutator/api/core';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import { deepFreeze } from '@stryker-mutator/util';
+import { Mutant, MutantStatus, schema } from '@d-es-ign/stryker-js-api/core';
+import { TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import { deepFreeze } from '@d-es-ign/stryker-js-util';
 import { expect } from 'chai';
 import chalk from 'chalk';
 import sinon from 'sinon';

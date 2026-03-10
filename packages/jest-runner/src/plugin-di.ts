@@ -1,5 +1,5 @@
-import { PluginContext } from '@stryker-mutator/api/plugin';
-import type { requireResolve } from '@stryker-mutator/util';
+import { PluginContext } from '@d-es-ign/stryker-js-api/plugin';
+import type { requireResolve } from '@d-es-ign/stryker-js-util';
 
 import { JestWrapper, JestConfigWrapper } from './utils/index.js';
 

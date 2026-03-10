@@ -1,11 +1,11 @@
 import path from 'path';
 import { URL } from 'url';
 
-import { commonTokens, PluginKind, Plugin } from '@stryker-mutator/api/plugin';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { commonTokens, PluginKind, Plugin } from '@d-es-ign/stryker-js-api/plugin';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { errorToString, Task } from '@stryker-mutator/util';
+import { errorToString, Task } from '@d-es-ign/stryker-js-util';
 import type { createInjector, Injector } from 'typed-inject';
 
 import {
@@ -31,7 +31,7 @@ import { LoggingServerAddress } from '../../../src/logging/index.js';
 
 import { HelloClass } from './hello-class.js';
 import { LoggingClient } from '../../../src/logging/logging-client.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 
 const LOGGING_ADDRESS: LoggingServerAddress = Object.freeze({ port: 4200 });
 

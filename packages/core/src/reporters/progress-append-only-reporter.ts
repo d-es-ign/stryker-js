@@ -1,6 +1,6 @@
 import os from 'os';
 
-import { MutationTestingPlanReadyEvent } from '@stryker-mutator/api/report';
+import { MutationTestingPlanReadyEvent } from '@d-es-ign/stryker-js-api/report';
 
 import { ProgressKeeper } from './progress-keeper.js';
 

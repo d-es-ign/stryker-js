@@ -1,7 +1,7 @@
 import type { BaseNode, Program } from 'estree';
 import type { AST } from 'svelte/compiler';
 
-import { notEmpty } from '@stryker-mutator/util';
+import { notEmpty } from '@d-es-ign/stryker-js-util';
 
 import { satisfies } from 'semver';
 

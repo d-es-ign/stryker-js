@@ -4,9 +4,9 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 import { expect } from 'chai';
-import { Location, Mutant } from '@stryker-mutator/api/core';
-import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { Location, Mutant } from '@d-es-ign/stryker-js-api/core';
+import { CheckResult, CheckStatus } from '@d-es-ign/stryker-js-api/check';
+import { testInjector, factory } from '@d-es-ign/stryker-js-test-helpers';
 
 import { createTypescriptChecker } from '../../src/index.js';
 import { TypescriptChecker } from '../../src/typescript-checker.js';

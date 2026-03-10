@@ -98,7 +98,7 @@ Some examples:
 ✅ A feature without breaking change.
 > feat(karma-runner): resolve local karma and ng version
 > 
-> Require `karma` or `@angular/cli` from the current working directory, instead of from `@stryker-mutator/karma-runner/src/util.js` (where the old `requireModule` function lived).
+> Require `karma` or `@angular/cli` from the current working directory, instead of from `@d-es-ign/stryker-js-karma-runner/src/util.js` (where the old `requireModule` function lived).
 
 ✅ Fix something in the docs (won’t appear in changelog)
 > docs(plugins): fix dead link

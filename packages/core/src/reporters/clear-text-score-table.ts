@@ -3,7 +3,7 @@ import os from 'os';
 import {
   MutationScoreThresholds,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 
 import { MetricsResult } from 'mutation-testing-metrics';
 

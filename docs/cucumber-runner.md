@@ -11,21 +11,21 @@ _Note: this plugin only supports the [`@cucumber/cucumber` nodejs test runner](h
 
 ## Install
 
-Install @stryker-mutator/cucumber-runner locally within your project folder, like so:
+Install @d-es-ign/stryker-js-cucumber-runner locally within your project folder, like so:
 
 ```shell
-npm i --save-dev @stryker-mutator/cucumber-runner
+npm i --save-dev @d-es-ign/stryker-js-cucumber-runner
 ```
 
 ## Peer dependencies
 
-The `@stryker-mutator/cucumber-runner` is a plugin for `stryker` to enable `@cucumber/cucumber` as a test runner.
+The `@d-es-ign/stryker-js-cucumber-runner` is a plugin for `stryker` to enable `@cucumber/cucumber` as a test runner.
 As such, you should make sure you have the correct versions of its dependencies installed:
 
 - `@cucumber/cucumber`
-- `@stryker-mutator/core`
+- `@d-es-ign/stryker-js-core`
 
-You can find the [`peerDependencies` in @stryker-mutator/cucumber-runner's package.json file](https://github.com/stryker-mutator/stryker-js/blob/HEAD/packages/cucumber-runner/package.json#L53-L56).
+You can find the [`peerDependencies` in @d-es-ign/stryker-js-cucumber-runner's package.json file](https://github.com/stryker-mutator/stryker-js/blob/HEAD/packages/cucumber-runner/package.json#L53-L56).
 
 ## Configuring
 
@@ -64,11 +64,11 @@ Choose which tags to focus. See [Tags](https://github.com/cucumber/cucumber-js/b
 
 ## Coverage analysis
 
-The `@stryker-mutator/cucumber-runner` plugin supports coverage analysis, test filtering and test location reporting. This means that `--coverageAnalysis perTest` (which is the default) is supported and will yield the best performance.
+The `@d-es-ign/stryker-js-cucumber-runner` plugin supports coverage analysis, test filtering and test location reporting. This means that `--coverageAnalysis perTest` (which is the default) is supported and will yield the best performance.
 
 ## Non-standard feature file locations
 
-As of `@stryker-mutator/cucumber-runner` version 6.1, non-standard feature file locations are supported out of the box.
+As of `@d-es-ign/stryker-js-cucumber-runner` version 6.1, non-standard feature file locations are supported out of the box.
 
 ## TypeScript
 

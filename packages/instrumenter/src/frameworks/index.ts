@@ -1,4 +1,4 @@
-import { PluginKind, declareClassPlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareClassPlugin } from '@d-es-ign/stryker-js-api/plugin';
 
 import { AngularIgnorer } from './angular-ignorer.js';
 

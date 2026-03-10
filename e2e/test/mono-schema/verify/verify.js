@@ -14,7 +14,7 @@ import { beforeEach } from 'mocha';
 const monoSchema = JSON.parse(
   fs.readFileSync(
     new URL(
-      '../../../node_modules/@stryker-mutator/core/schema/stryker-schema.json',
+      '../../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json',
       import.meta.url,
     ),
     'utf-8',

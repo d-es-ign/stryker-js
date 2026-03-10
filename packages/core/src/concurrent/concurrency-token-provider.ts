@@ -1,10 +1,10 @@
 import os from 'os';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import { ReplaySubject, Observable, range } from 'rxjs';
 import { Disposable, tokens } from 'typed-inject';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 
 export class ConcurrencyTokenProvider implements Disposable {
   private readonly concurrencyCheckers: number;

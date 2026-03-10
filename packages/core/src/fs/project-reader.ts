@@ -8,15 +8,15 @@ import {
   FileDescription,
   Location,
   Position,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens, tokens } from '@d-es-ign/stryker-js-api/plugin';
 import {
   ERROR_CODES,
   I,
   isErrnoException,
   notEmpty,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import type { MutationTestResult } from 'mutation-testing-report-schema/api';
 
 import { OpenEndLocation } from 'mutation-testing-report-schema';

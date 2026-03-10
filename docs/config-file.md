@@ -15,7 +15,7 @@ With a `stryker.config.json`:
 
 ```json
 {
-  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "./node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "_comment": "Comments can be put inside `xxx_comment` properties."
 }
 ```
@@ -25,7 +25,7 @@ Or as `stryker.config.js`:
 ```js
 // @ts-check
 /**
-* @type {import('@stryker-mutator/api/core').PartialStrykerOptions}
+* @type {import('@d-es-ign/stryker-js-api/core').PartialStrykerOptions}
 */
 module.exports = {
   // Your config here
@@ -36,7 +36,7 @@ Since Stryker version 6 you can define your config in a native [ECMAScript modul
 
 ```js
 // @ts-check
-/** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
+/** @type {import('@d-es-ign/stryker-js-api/core').PartialStrykerOptions} */
 const config = {
   // Your config here
 };
@@ -87,7 +87,7 @@ The following is an example `stryker.config.json` file. It specifies running moc
 
 ```json
 {
-  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "./node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "testRunner": "mocha",
   "coverageAnalysis": "perTest"
 }

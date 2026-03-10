@@ -1,5 +1,5 @@
 import type { types } from '@babel/core';
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@d-es-ign/stryker-js-api/core';
 
 import { Mutant, Mutable } from '../mutant.js';
 

@@ -1,10 +1,10 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "packageManager": "npm",
   "testRunner": "tap",
   "tempDirName": "stryker-tmp",
   "concurrency": 2,
   "coverageAnalysis": "off",
   "reporters": ["json", "event-recorder", "progress", "html"],
-  "plugins": ["@stryker-mutator/tap-runner"]
+  "plugins": ["@d-es-ign/stryker-js-tap-runner"]
 }

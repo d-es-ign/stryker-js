@@ -1,5 +1,5 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { LogLevel } from '@d-es-ign/stryker-js-api/core';
 import { LoggingEvent } from './logging-event.js';
 import { LoggingSink } from './logging-sink.js';
 

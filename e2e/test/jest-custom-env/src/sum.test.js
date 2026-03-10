@@ -1,5 +1,5 @@
 /**
- * @jest-environment @stryker-mutator/jest-runner/jest-env/node
+ * @jest-environment @d-es-ign/stryker-js-jest-runner/jest-env/node
  */
 const {sum, sub} = require('./sum');
 

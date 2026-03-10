@@ -20,7 +20,7 @@ First, install Stryker itself (you can follow the [getting started](./getting-st
 Next, install this package:
 
 ```bash
-npm install --save-dev @stryker-mutator/typescript-checker
+npm install --save-dev @d-es-ign/stryker-js-typescript-checker
 ```
 
 ## Configuring
@@ -43,7 +43,7 @@ Default: `'tsconfig.json'`
 
 The path to your [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html). Project references _are supported_, `--build` mode will be enabled automatically when references are found in your tsconfig.json file.
 
-_Note: the following compiler options are always overridden by @stryker-mutator/typescript-checker to avoid false positives. See [issue 391](https://github.com/stryker-mutator/stryker-js/issues/391#issue-259829320) for more information on this_
+_Note: the following compiler options are always overridden by @d-es-ign/stryker-js-typescript-checker to avoid false positives. See [issue 391](https://github.com/stryker-mutator/stryker-js/issues/391#issue-259829320) for more information on this_
 
 ```json
 {
@@ -63,17 +63,17 @@ Sets the performance strategy for the typescript-checker. Defaults to `true` whi
 
 ## Peer dependencies
 
-The `@stryker-mutator/typescript-checker` package for `stryker` to enable `typescript` support. As such, you should make sure you have the correct versions of its dependencies installed:
+The `@d-es-ign/stryker-js-typescript-checker` package for `stryker` to enable `typescript` support. As such, you should make sure you have the correct versions of its dependencies installed:
 
 - `typescript`
-- `@stryker-mutator/core`
+- `@d-es-ign/stryker-js-core`
 
 For the current versions, see the `peerDependencies` section in the [package.json](https://github.com/stryker-mutator/stryker-js/blob/master/packages/typescript-checker/package.json).
 
 
 ## Load the plugin
 
-In this plugin the `@stryker-mutator/typescript-checker`' must be loaded into Stryker.
-The easiest way to achieve this, is _not have a `plugins` section_ in your config file. That way, all plugins starting with `"@stryker-mutator/"` will be loaded.
+In this plugin the `@d-es-ign/stryker-js-typescript-checker`' must be loaded into Stryker.
+The easiest way to achieve this, is _not have a `plugins` section_ in your config file. That way, all plugins starting with `"@d-es-ign/stryker-js-"` will be loaded.
 
-If you do decide to choose specific modules, don't forget to add `"@stryker-mutator/typescript-checker"` to the list of plugins to load.
+If you do decide to choose specific modules, don't forget to add `"@d-es-ign/stryker-js-typescript-checker"` to the list of plugins to load.

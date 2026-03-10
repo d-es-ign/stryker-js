@@ -11,5 +11,5 @@ module.exports = {
       testEnvironment: require.resolve('jest-environment-jsdom'),
     },
   },
-  plugins: ['@stryker-mutator/jest-runner'],
+  plugins: ['@d-es-ign/stryker-js-jest-runner'],
 };

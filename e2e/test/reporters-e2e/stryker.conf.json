@@ -1,11 +1,11 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "testRunner": "mocha",
   "concurrency": 2,
   "coverageAnalysis": "perTest",
   "reporters": ["clear-text", "html", "event-recorder", "json"],
   "plugins": [
-    "@stryker-mutator/mocha-runner"
+    "@d-es-ign/stryker-js-mocha-runner"
   ],
   "allowConsoleColors": false
 }

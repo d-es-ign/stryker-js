@@ -1,6 +1,6 @@
 import babel from '@babel/core';
 import generator from '@babel/generator';
-import { Mutant as MutantApi } from '@stryker-mutator/api/core';
+import { Mutant as MutantApi } from '@d-es-ign/stryker-js-api/core';
 import { expect } from 'chai';
 
 import { Mutant } from '../../src/mutant.js';

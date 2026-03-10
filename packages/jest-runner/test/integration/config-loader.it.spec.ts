@@ -2,9 +2,9 @@ import {
   assertions,
   factory,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
-import { requireResolve } from '@stryker-mutator/util';
+import { requireResolve } from '@d-es-ign/stryker-js-util';
 
 import { CustomJestConfigLoader } from '../../src/config-loaders/custom-jest-config-loader.js';
 import { JestRunnerOptionsWithStrykerOptions } from '../../src/jest-runner-options-with-stryker-options.js';

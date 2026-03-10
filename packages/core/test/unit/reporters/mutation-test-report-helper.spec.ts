@@ -1,13 +1,13 @@
 import path from 'path';
 
 import sinon from 'sinon';
-import { Location, MutantResult, schema } from '@stryker-mutator/api/core';
-import { Reporter } from '@stryker-mutator/api/report';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import type { requireResolve } from '@stryker-mutator/util';
+import { Location, MutantResult, schema } from '@d-es-ign/stryker-js-api/core';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
+import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import type { requireResolve } from '@d-es-ign/stryker-js-util';
 import { expect } from 'chai';
-import { CheckStatus } from '@stryker-mutator/api/check';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
+import { CheckStatus } from '@d-es-ign/stryker-js-api/check';
+import { TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
 import { calculateMutationTestMetrics } from 'mutation-testing-metrics';
 
 import { coreTokens } from '../../../src/di/index.js';
@@ -123,11 +123,11 @@ describe(MutationTestReportHelper.name, () => {
       it('should report "dependencies"', async () => {
         // Arrange
         const expectedDependencies: schema.Dependencies = {
-          '@stryker-mutator/mocha-runner': '1.0.1',
-          '@stryker-mutator/karma-runner': '1.0.2',
-          '@stryker-mutator/jasmine-runner': '1.0.3',
-          '@stryker-mutator/jest-runner': '1.0.4',
-          '@stryker-mutator/typescript-checker': '1.0.5',
+          '@d-es-ign/stryker-js-mocha-runner': '1.0.1',
+          '@d-es-ign/stryker-js-karma-runner': '1.0.2',
+          '@d-es-ign/stryker-js-jasmine-runner': '1.0.3',
+          '@d-es-ign/stryker-js-jest-runner': '1.0.4',
+          '@d-es-ign/stryker-js-typescript-checker': '1.0.5',
           karma: '1.0.6',
           'karma-chai': '1.0.7',
           'karma-chrome-launcher': '1.0.8',

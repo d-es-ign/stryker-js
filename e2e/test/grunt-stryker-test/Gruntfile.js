@@ -24,7 +24,7 @@ module.exports = function (grunt) {
               ],
             },
           },
-          plugins: ['@stryker-mutator/karma-runner'],
+          plugins: ['@d-es-ign/stryker-js-karma-runner'],
         },
       },
       withConfigFile: {
@@ -35,6 +35,6 @@ module.exports = function (grunt) {
     },
   });
 
-  require('grunt-stryker/tasks/stryker')(grunt);
+  require('@d-es-ign/stryker-js-grunt-stryker/tasks/stryker')(grunt);
   grunt.registerTask('test', ['stryker']);
 };

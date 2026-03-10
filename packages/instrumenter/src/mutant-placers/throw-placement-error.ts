@@ -1,8 +1,8 @@
 import path from 'path';
 
 import { NodePath } from '@babel/core';
-import { propertyPath } from '@stryker-mutator/util';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { propertyPath } from '@d-es-ign/stryker-js-util';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 
 import { Mutant } from '../mutant.js';
 

@@ -2,8 +2,8 @@ import os from 'os';
 
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { factory } from '@stryker-mutator/test-helpers';
-import { PlanKind } from '@stryker-mutator/api/core';
+import { factory } from '@d-es-ign/stryker-js-test-helpers';
+import { PlanKind } from '@d-es-ign/stryker-js-api/core';
 
 import { ProgressAppendOnlyReporter } from '../../../src/reporters/progress-append-only-reporter.js';
 

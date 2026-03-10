@@ -1,10 +1,10 @@
 import path from 'path';
 
 import ts from 'typescript';
-import { propertyPath, Task } from '@stryker-mutator/util';
-import { Mutant, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { propertyPath, Task } from '@d-es-ign/stryker-js-util';
+import { Mutant, StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { tokens, commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 
 import { HybridFileSystem } from './fs/index.js';
 import {

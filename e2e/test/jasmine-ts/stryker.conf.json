@@ -1,10 +1,10 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json",
   "checkers": ["typescript"],
   "testRunner": "jasmine",
   "concurrency": 2,
   "coverageAnalysis": "perTest",
   "reporters": ["json", "event-recorder", "clear-text"],
-  "appendPlugins": ["@stryker-mutator/typescript-checker"],
-  "plugins": ["@stryker-mutator/jasmine-runner"]
+  "appendPlugins": ["@d-es-ign/stryker-js-typescript-checker"],
+  "plugins": ["@d-es-ign/stryker-js-jasmine-runner"]
 }

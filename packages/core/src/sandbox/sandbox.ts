@@ -2,14 +2,14 @@ import path from 'path';
 
 import type { execaCommand } from 'execa';
 import { npmRunPathEnv } from 'npm-run-path';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
 import {
   normalizeWhitespaces,
   I,
   isErrnoException,
-} from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
-import { tokens, commonTokens, Disposable } from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { tokens, commonTokens, Disposable } from '@d-es-ign/stryker-js-api/plugin';
 
 import { TemporaryDirectory } from '../utils/temporary-directory.js';
 import { fileUtils } from '../utils/file-utils.js';

@@ -6,14 +6,14 @@ import {
   INSTRUMENTER_CONSTANTS,
   MutantCoverage,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   TestRunner,
   DryRunResult,
@@ -25,14 +25,14 @@ import {
   determineHitLimitReached,
   TestStatus,
   DryRunOptions,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   errorToString,
   escapeRegExp,
   normalizeFileName,
   notEmpty,
   testFilesProvided,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 
 import { vitestWrapper, Vitest } from './vitest-wrapper.js';
 import {

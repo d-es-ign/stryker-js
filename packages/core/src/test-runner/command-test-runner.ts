@@ -5,7 +5,7 @@ import {
   StrykerOptions,
   CommandRunnerOptions,
   INSTRUMENTER_CONSTANTS,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 import {
   TestRunner,
   TestStatus,
@@ -18,8 +18,8 @@ import {
   toMutantRunResult,
   TestRunnerCapabilities,
   DryRunOptions,
-} from '@stryker-mutator/api/test-runner';
-import { errorToString, testFilesProvided } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { errorToString, testFilesProvided } from '@d-es-ign/stryker-js-util';
 
 import { objectUtils } from '../utils/object-utils.js';
 import { Timer } from '../utils/timer.js';

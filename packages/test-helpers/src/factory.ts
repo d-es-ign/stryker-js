@@ -13,14 +13,14 @@ import {
   MutantRunPlan,
   PlanKind,
   MutantEarlyResultPlan,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import {
   DryRunCompletedEvent,
   MutationTestingPlanReadyEvent,
   Reporter,
   RunTiming,
-} from '@stryker-mutator/api/report';
+} from '@d-es-ign/stryker-js-api/report';
 import {
   calculateMutationTestMetrics,
   Metrics,
@@ -48,13 +48,13 @@ import {
   TestStatus,
   TestResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   Checker,
   CheckResult,
   CheckStatus,
   FailedCheckResult,
-} from '@stryker-mutator/api/check';
+} from '@d-es-ign/stryker-js-api/check';
 
 const Ajv = ajvModule.default;
 const ajv = new Ajv({ useDefaults: true, strict: false });

@@ -1,12 +1,19 @@
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fstryker-mutator%2Fstryker-js%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/stryker-mutator/stryker-js/master)
 [![Build Status](https://github.com/stryker-mutator/stryker-js/workflows/CI/badge.svg)](https://github.com/stryker-mutator/stryker-js/actions?query=workflow%3ACI+branch%3Amaster)
-[![NPM](https://img.shields.io/npm/dm/@stryker-mutator/core.svg)](https://www.npmjs.com/package/@stryker-mutator/core)
-[![Node version](https://img.shields.io/node/v/@stryker-mutator/core.svg)](https://img.shields.io/node/v/@stryker-mutator/core.svg)
+[![NPM](https://img.shields.io/npm/dm/@d-es-ign/stryker-js-core.svg)](https://www.npmjs.com/package/@d-es-ign/stryker-js-core)
+[![Node version](https://img.shields.io/node/v/@d-es-ign/stryker-js-core.svg)](https://img.shields.io/node/v/@d-es-ign/stryker-js-core.svg)
 [![Slack Chat](https://img.shields.io/badge/slack-chat-brightgreen.svg?logo=slack)](https://join.slack.com/t/stryker-mutator/shared_invite/enQtOTUyMTYyNTg1NDQ0LTU4ODNmZDlmN2I3MmEyMTVhYjZlYmJkOThlNTY3NTM1M2QxYmM5YTM3ODQxYmJjY2YyYzllM2RkMmM1NjNjZjM)
 
 ![Stryker](stryker-80x80.png)
 
 # StrykerJS
+
+
+> **Fork notice**
+>
+> This project is a fork of the corresponding `@stryker-mutator` package/repository.
+> Maintenance here is intentionally limited, and this fork only exists while
+> https://github.com/stryker-mutator/stryker-js/pull/5866 has not been accepted and implemented.
 
 *Professor X: For someone who hates mutants... you certainly keep some strange company.*
 *William Stryker: Oh, they serve their purpose... as long as they can be controlled.*
@@ -27,7 +34,7 @@ Please follow the [quickstart on the website](https://stryker-mutator.io/docs/st
 For small js projects, you can try the following command:
 
 ```
-pnpm add --save-dev @stryker-mutator/core
+pnpm add --save-dev @d-es-ign/stryker-js-core
 # Only for small projects:
 npx stryker run
 ```

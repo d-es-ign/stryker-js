@@ -3,13 +3,13 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 import semver from 'semver';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   determineHitLimitReached,
   DryRunOptions,
@@ -23,13 +23,13 @@ import {
   TestRunnerCapabilities,
   TestStatus,
   toMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import {
   InstrumenterContext,
   INSTRUMENTER_CONSTANTS,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { testFilesProvided } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/core';
+import { testFilesProvided } from '@d-es-ign/stryker-js-util';
 import type {
   IConfiguration,
   IRunOptions,
@@ -242,7 +242,7 @@ const pkg: { peerDependencies: { '@cucumber/cucumber': string } } = JSON.parse(
 export function guardForCucumberJSVersion(version = cucumberVersion): void {
   if (!semver.satisfies(version, pkg.peerDependencies['@cucumber/cucumber'])) {
     throw new Error(
-      `@stryker-mutator/cucumber-runner only supports @cucumber/cucumber@${pkg.peerDependencies['@cucumber/cucumber']}. Found v${version}`,
+      `@d-es-ign/stryker-js-cucumber-runner only supports @cucumber/cucumber@${pkg.peerDependencies['@cucumber/cucumber']}. Found v${version}`,
     );
   }
 }

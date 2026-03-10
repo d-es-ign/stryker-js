@@ -4,7 +4,7 @@ import {
   MutantRunOptions,
   MutantRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 
 import { TestRunnerDecorator } from './test-runner-decorator.js';
 

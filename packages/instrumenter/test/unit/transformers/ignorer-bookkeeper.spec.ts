@@ -1,4 +1,4 @@
-import { Ignorer } from '@stryker-mutator/api/ignore';
+import { Ignorer } from '@d-es-ign/stryker-js-api/ignore';
 import { NodePath, types } from '@babel/core';
 import { expect } from 'chai';
 

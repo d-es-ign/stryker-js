@@ -1,4 +1,4 @@
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@d-es-ign/stryker-js-api/core';
 
 export class ParseError extends Error {
   constructor(message: string, fileName: string, location: Position) {

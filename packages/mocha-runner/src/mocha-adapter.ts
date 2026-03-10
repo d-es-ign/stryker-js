@@ -1,8 +1,8 @@
 import path from 'path';
 import fs from 'fs';
 
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
+import { tokens, commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 import { RootHookObject } from 'mocha';
 
 import { MochaOptions } from '../src-generated/mocha-runner-options.js';

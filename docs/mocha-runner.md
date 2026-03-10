@@ -7,19 +7,19 @@ A plugin to use Mocha in Stryker
 
 ## Install
 
-Install @stryker-mutator/mocha-runner locally within your project folder, like so:
+Install @d-es-ign/stryker-js-mocha-runner locally within your project folder, like so:
 
 ```shell
-npm i --save-dev @stryker-mutator/mocha-runner
+npm i --save-dev @d-es-ign/stryker-js-mocha-runner
 ```
 
 ## Peer dependencies
 
-The `@stryker-mutator/mocha-runner` is a plugin for `stryker` to enable `mocha` as a test runner.
+The `@d-es-ign/stryker-js-mocha-runner` is a plugin for `stryker` to enable `mocha` as a test runner.
 As such, you should make sure you have the correct versions of its dependencies installed:
 
 * `mocha`
-* `@stryker-mutator/core`
+* `@d-es-ign/stryker-js-core`
 
 ## Configuring
 
@@ -42,7 +42,7 @@ You can configure the mocha test runner in the `stryker.config.json` (or `stryke
 }
 ```
 
-When using Mocha version 6, @stryker-mutator/mocha-runner will use [mocha's internal file loading mechanism](https://mochajs.org/api/module-lib_cli.html#.loadOptions) to load your mocha configuration.
+When using Mocha version 6, @d-es-ign/stryker-js-mocha-runner will use [mocha's internal file loading mechanism](https://mochajs.org/api/module-lib_cli.html#.loadOptions) to load your mocha configuration.
 So feel free to _leave out the mochaOptions entirely_ if you're using one of the [default file locations](https://mochajs.org/#configuring-mocha-nodejs).
 
 Alternatively, use `['no-config']: true`, `['no-package']: true` or `['no-opts']: true` to ignore the default mocha config, default mocha package.json and default mocha opts locations respectively.
@@ -78,7 +78,7 @@ Default: `"test/mocha.opts"`
 
 Specify a ['mocha.opts' file](https://mochajs.org/#mochaopts) to be loaded. Options specified directly in your stryker.config.js file will overrule options from the 'mocha.opts' file. Disable loading of an additional mocha.opts file with `false`.
 
-The only supported mocha options are used: `--ui`, `--require`, `--async-only`, `--timeout`, `--grep` (or their short form counterparts). Others are ignored by the @stryker-mutator/mocha-runner.
+The only supported mocha options are used: `--ui`, `--require`, `--async-only`, `--timeout`, `--grep` (or their short form counterparts). Others are ignored by the @d-es-ign/stryker-js-mocha-runner.
 
 ### `mochaOptions.grep` [`RegExp`]
 

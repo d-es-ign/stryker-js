@@ -18,9 +18,9 @@ import type {
   InstrumenterContext,
   Position,
   // @ts-expect-error see https://github.com/microsoft/TypeScript/issues/49721#issuecomment-1319854183
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 // @ts-expect-error see https://github.com/microsoft/TypeScript/issues/49721#issuecomment-1319854183
-import type { TestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+import type { TestResult, TestStatus } from '@d-es-ign/stryker-js-api/test-runner';
 
 import { Formatter } from './cucumber-wrapper.cjs';
 

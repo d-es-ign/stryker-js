@@ -1,5 +1,5 @@
-import type { MutantCoverage } from '@stryker-mutator/api/core';
-import type { MutantActivation } from '@stryker-mutator/api/test-runner';
+import type { MutantCoverage } from '@d-es-ign/stryker-js-api/core';
+import type { MutantActivation } from '@d-es-ign/stryker-js-api/test-runner';
 import {
   beforeEach,
   afterAll,

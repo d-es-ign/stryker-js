@@ -35,17 +35,17 @@
     ]
   },
   "devDependencies": {
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*",
+    "@d-es-ign/stryker-js-core": "workspace:*",
+    "@d-es-ign/stryker-js-jest-runner": "workspace:*",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@d-es-ign/stryker-js-core": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@d-es-ign/stryker-js-jest-runner": {
       "injected": true
     }
   }

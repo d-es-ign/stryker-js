@@ -6,13 +6,13 @@ import {
   InstrumenterContext,
   MutantCoverage,
   INSTRUMENTER_CONSTANTS,
-} from '@stryker-mutator/api/core';
+} from '@d-es-ign/stryker-js-api/core';
 import {
   commonTokens,
   tokens,
   Injector,
   PluginContext,
-} from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/plugin';
 import {
   DryRunStatus,
   TestResult,
@@ -26,8 +26,8 @@ import {
   determineHitLimitReached,
   TestRunnerCapabilities,
   MutantActivation,
-} from '@stryker-mutator/api/test-runner';
-import { errorToString, testFilesProvided } from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-api/test-runner';
+import { errorToString, testFilesProvided } from '@d-es-ign/stryker-js-util';
 import jasmine from 'jasmine';
 
 import { JasmineRunnerOptions } from '../src-generated/jasmine-runner-options.js';

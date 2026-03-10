@@ -2,10 +2,10 @@ import os from 'os';
 import fs from 'fs/promises';
 
 import type { execaCommand } from 'execa';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Immutable, type resolveFromCwd } from '@stryker-mutator/util';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
+import { StrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { Immutable, type resolveFromCwd } from '@d-es-ign/stryker-js-util';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
 
 import semver from 'semver';
 
@@ -35,7 +35,7 @@ export class AngularInitializer implements CustomInitializer {
 
   public readonly name = 'angular-cli';
   // Please keep config in sync with handbook
-  private readonly dependencies = ['@stryker-mutator/karma-runner'];
+  private readonly dependencies = ['@d-es-ign/stryker-js-karma-runner'];
   private readonly config: Immutable<Partial<StrykerOptions>> = {
     mutate: [
       'src/**/*.ts',

@@ -1,6 +1,6 @@
 module.exports = {
   $schema:
-    '../../node_modules/@stryker-mutator/core/schema/stryker-schema.json',
+    '../../node_modules/@d-es-ign/stryker-js-core/schema/stryker-schema.json',
   mutate: ['src/*.js'],
   testRunner: 'karma',
   reporters: ['json', 'clear-text', 'html', 'event-recorder'],
@@ -17,6 +17,6 @@ module.exports = {
       ],
     },
   },
-  plugins: ['@stryker-mutator/karma-runner'],
+  plugins: ['@d-es-ign/stryker-js-karma-runner'],
   timeoutMS: 120000,
 };

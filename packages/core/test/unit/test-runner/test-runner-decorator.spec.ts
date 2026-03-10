@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { TestRunner } from '@stryker-mutator/api/test-runner';
-import { factory } from '@stryker-mutator/test-helpers';
+import { TestRunner } from '@d-es-ign/stryker-js-api/test-runner';
+import { factory } from '@d-es-ign/stryker-js-test-helpers';
 
 import { TestRunnerDecorator } from '../../../src/test-runner/test-runner-decorator.js';
 

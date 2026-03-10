@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import babel from '@babel/core';
 
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@d-es-ign/stryker-js-api/core';
 
 import { MutantCollector } from '../../../src/transformers/mutant-collector.js';
 import { createMutant } from '../../helpers/factories.js';

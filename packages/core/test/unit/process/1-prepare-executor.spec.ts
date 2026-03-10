@@ -4,9 +4,9 @@ import sinon from 'sinon';
 import { JSONSchema7 } from 'json-schema';
 import { Injector } from 'typed-inject';
 import { expect } from 'chai';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
-import { frameworkPluginsFileUrl } from '@stryker-mutator/instrumenter';
+import { testInjector, factory } from '@d-es-ign/stryker-js-test-helpers';
+import { PartialStrykerOptions } from '@d-es-ign/stryker-js-api/core';
+import { frameworkPluginsFileUrl } from '@d-es-ign/stryker-js-instrumenter';
 
 import {
   MutantInstrumenterContext,
@@ -107,7 +107,7 @@ describe(PrepareExecutor.name, () => {
     // Arrange
     testInjector.options.appendPlugins = ['appended'];
     testInjector.options.plugins = [
-      '@stryker-mutator/*',
+      '@d-es-ign/stryker-js-*',
       './my-custom-plugin.js',
     ];
 
@@ -116,7 +116,7 @@ describe(PrepareExecutor.name, () => {
 
     // Assert
     sinon.assert.calledWithExactly(pluginLoaderMock.load, [
-      '@stryker-mutator/*',
+      '@d-es-ign/stryker-js-*',
       './my-custom-plugin.js',
       frameworkPluginsFileUrl,
       reporterPluginsFileUrl,
@@ -127,7 +127,7 @@ describe(PrepareExecutor.name, () => {
   it('should provided the loaded modules as pluginModulePaths', async () => {
     // Arrange
     const expectedPluginPaths = [
-      '@stryker-mutator/core',
+      '@d-es-ign/stryker-js-core',
       path.resolve('./my-custom-plugin.js'),
       'appended',
     ];

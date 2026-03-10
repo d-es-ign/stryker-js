@@ -9,15 +9,15 @@ A plugin to use the karma test runner (or [@angular/cli](https://www.npmjs.com/p
 
 ## Install
 
-Install @stryker-mutator/karma-runner locally within your project folder, like so:
+Install @d-es-ign/stryker-js-karma-runner locally within your project folder, like so:
 
 ```bash
-npm i --save-dev @stryker-mutator/karma-runner
+npm i --save-dev @d-es-ign/stryker-js-karma-runner
 ```
 
 ## Bring your own test runner
 
-The `@stryker-mutator/karma-runner` is a plugin for `stryker` to enable `karma` as a test runner.
+The `@d-es-ign/stryker-js-karma-runner` is a plugin for `stryker` to enable `karma` as a test runner.
 However, it does *not* come packaged with it's own version of `karma`, instead it
 uses *your very own karma* version. It can also work with `@angular/cli`, see [Configuring](#configuring)
 
@@ -25,7 +25,7 @@ uses *your very own karma* version. It can also work with `@angular/cli`, see [C
 
 ## Configuring
 
-You can configure the `@stryker-mutator/karma-runner` using the `stryker.config.json` (or `stryker.config.js`) config file.
+You can configure the `@d-es-ign/stryker-js-karma-runner` using the `stryker.config.json` (or `stryker.config.js`) config file.
 
 ```json
 {
@@ -46,8 +46,8 @@ Default: `"custom"`
 
 Specify which kind of project you're using. This determines which command is used to start karma
 
-* **`"custom"`**: configure @stryker-mutator/karma-runner to use `karma start`.
-* **`"angular-cli"`**: configure @stryker-mutator/karma-runner to use `ng test` (see [configuring for angular-cli](#configure-angular-cli)).
+* **`"custom"`**: configure @d-es-ign/stryker-js-karma-runner to use `karma start`.
+* **`"angular-cli"`**: configure @d-es-ign/stryker-js-karma-runner to use `ng test` (see [configuring for angular-cli](#configure-angular-cli)).
 
 ### `karma.configFile` [`string`]
 
@@ -86,7 +86,7 @@ This will run ng test with `--project` argument: `ng test --project=my-lib`.
 
 ## Non overridable options
 
-The browser's life cycle is determined by `@stryker-mutator/karma-runner`. I.e. these settings cannot be overridden. You configuration settings for these will be ignored.
+The browser's life cycle is determined by `@d-es-ign/stryker-js-karma-runner`. I.e. these settings cannot be overridden. You configuration settings for these will be ignored.
 
 ```javascript
 {

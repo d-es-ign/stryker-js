@@ -3,9 +3,9 @@ import {
   testInjector,
   assertions,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
-import { MutantRunStatus } from '@stryker-mutator/api/test-runner';
+import { MutantRunStatus } from '@d-es-ign/stryker-js-api/test-runner';
 
 import {
   JasmineTestRunner,

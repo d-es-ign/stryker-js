@@ -2,11 +2,11 @@ import childProcess from 'child_process';
 import fs from 'fs';
 import { syncBuiltinESMExports } from 'module';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import {
   childProcessAsPromised,
   normalizeWhitespaces,
-} from '@stryker-mutator/util';
+} from '@d-es-ign/stryker-js-util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import typedRestClient, {
@@ -80,28 +80,28 @@ describe(StrykerInitializer.name, () => {
   describe('initialize()', () => {
     beforeEach(() => {
       stubTestRunners(
-        '@stryker-mutator/awesome-runner',
+        '@d-es-ign/stryker-js-awesome-runner',
         'stryker-hyper-runner',
         'stryker-ghost-runner',
-        '@stryker-mutator/jest-runner',
+        '@d-es-ign/stryker-js-jest-runner',
       );
       stubReporters(
         'stryker-dimension-reporter',
-        '@stryker-mutator/mars-reporter',
+        '@d-es-ign/stryker-js-mars-reporter',
       );
       stubPackageClient({
-        '@stryker-mutator/awesome-runner': undefined,
-        '@stryker-mutator/javascript-mutator': undefined,
-        '@stryker-mutator/mars-reporter': undefined,
-        '@stryker-mutator/typescript': undefined,
-        '@stryker-mutator/webpack': undefined,
+        '@d-es-ign/stryker-js-awesome-runner': undefined,
+        '@d-es-ign/stryker-js-javascript-mutator': undefined,
+        '@d-es-ign/stryker-js-mars-reporter': undefined,
+        '@d-es-ign/stryker-js-typescript': undefined,
+        '@d-es-ign/stryker-js-webpack': undefined,
         'stryker-dimension-reporter': undefined,
         'stryker-ghost-runner': undefined,
         'stryker-hyper-runner': {
           files: [],
           someOtherSetting: 'enabled',
         },
-        '@stryker-mutator/jest-runner': undefined,
+        '@d-es-ign/stryker-js-jest-runner': undefined,
       });
       fsWriteFile.resolves();
       customInitializers.push(customInitializerMock);
@@ -162,7 +162,7 @@ describe(StrykerInitializer.name, () => {
         guideUrl,
       });
       const expectedOutput = `// @ts-check
-        /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */  
+        /** @type {import('@d-es-ign/stryker-js-api/core').PartialStrykerOptions} */  
         const config =  {
           "_comment": "This config was generated using 'stryker init'. Please see the guide for more information: https://awesome-preset.org",
           "awesomeConf": "${config.awesomeConf}"
@@ -214,7 +214,7 @@ describe(StrykerInitializer.name, () => {
       await sut.initialize();
       expect(fsWriteFile).calledOnce;
       expect(childExecSync).calledWith(
-        'npm i --save-dev @stryker-mutator/core my-awesome-dependency another-awesome-dependency',
+        'npm i --save-dev @d-es-ign/stryker-js-core my-awesome-dependency another-awesome-dependency',
         { stdio: [0, 1, 2] },
       );
     });
@@ -259,7 +259,7 @@ describe(StrykerInitializer.name, () => {
       await sut.initialize();
       expect(out).calledWith('Installing NPM dependencies...');
       expect(childExecSync).calledWith(
-        'npm i --save-dev @stryker-mutator/core @stryker-mutator/awesome-runner stryker-dimension-reporter @stryker-mutator/mars-reporter',
+        'npm i --save-dev @d-es-ign/stryker-js-core @d-es-ign/stryker-js-awesome-runner stryker-dimension-reporter @d-es-ign/stryker-js-mars-reporter',
         {
           stdio: [0, 1, 2],
         },
@@ -274,14 +274,14 @@ describe(StrykerInitializer.name, () => {
       });
       await sut.initialize();
       expect(childExecSync).calledWith(
-        'pnpm add -D @stryker-mutator/core @stryker-mutator/awesome-runner',
+        'pnpm add -D @d-es-ign/stryker-js-core @d-es-ign/stryker-js-awesome-runner',
         {
           stdio: [0, 1, 2],
         },
       );
     });
 
-    it('should install @stryker-mutator/core when using the command test runner with no reporters (npm)', async () => {
+    it('should install @d-es-ign/stryker-js-core when using the command test runner with no reporters (npm)', async () => {
       arrangeAnswers({
         packageManager: 'npm',
         reporters: [],
@@ -290,12 +290,12 @@ describe(StrykerInitializer.name, () => {
       });
       await sut.initialize();
       expect(childExecSync).calledWith(
-        'npm i --save-dev @stryker-mutator/core',
+        'npm i --save-dev @d-es-ign/stryker-js-core',
         { stdio: [0, 1, 2] },
       );
     });
 
-    it('should include reporter packages alongside @stryker-mutator/core when using the command test runner (npm)', async () => {
+    it('should include reporter packages alongside @d-es-ign/stryker-js-core when using the command test runner (npm)', async () => {
       arrangeAnswers({
         packageManager: 'npm',
         reporters: ['dimension', 'mars'],
@@ -304,7 +304,7 @@ describe(StrykerInitializer.name, () => {
       });
       await sut.initialize();
       expect(childExecSync).calledWith(
-        'npm i --save-dev @stryker-mutator/core stryker-dimension-reporter @stryker-mutator/mars-reporter',
+        'npm i --save-dev @d-es-ign/stryker-js-core stryker-dimension-reporter @d-es-ign/stryker-js-mars-reporter',
         { stdio: [0, 1, 2] },
       );
     });
@@ -312,7 +312,7 @@ describe(StrykerInitializer.name, () => {
     it('should explicitly specify plugins when using pnpm', async () => {
       childExec.resolves();
       const expectedOutput = `// @ts-check
-          /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */  
+          /** @type {import('@d-es-ign/stryker-js-api/core').PartialStrykerOptions} */  
           const config =  {
             "_comment": "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information.",
             "packageManager": "pnpm",
@@ -320,7 +320,7 @@ describe(StrykerInitializer.name, () => {
             "testRunner": "awesome",
             "testRunner_comment": "Take a look at (missing 'homepage' URL in package.json) for information about the awesome plugin.",
             "coverageAnalysis": "perTest",
-            "plugins": [ "@stryker-mutator/awesome-runner" ]
+            "plugins": [ "@d-es-ign/stryker-js-awesome-runner" ]
           };
           export default config;`;
       arrangeAnswers({
@@ -474,7 +474,7 @@ describe(StrykerInitializer.name, () => {
       await sut.initialize();
 
       expect(out).calledWith(
-        'An error occurred during installation, please try it yourself: "npm i --save-dev @stryker-mutator/core stryker-ghost-runner"',
+        'An error occurred during installation, please try it yourself: "npm i --save-dev @d-es-ign/stryker-js-core stryker-ghost-runner"',
       );
       expect(fs.promises.writeFile).called;
     });
@@ -610,7 +610,7 @@ describe(StrykerInitializer.name, () => {
         package: {
           name: testRunner,
           version: '1.1.1',
-          keywords: ['@stryker-mutator/test-runner-plugin'],
+          keywords: ['@d-es-ign/stryker-js-test-runner-plugin'],
         },
       })),
     };
@@ -633,7 +633,7 @@ describe(StrykerInitializer.name, () => {
         package: {
           name: reporter,
           version: '1.1.1',
-          keywords: ['@stryker-mutator/reporter-plugin'],
+          keywords: ['@d-es-ign/stryker-js-reporter-plugin'],
         },
       })),
     };

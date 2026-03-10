@@ -2,9 +2,9 @@ import { execaCommandSync } from 'execa';
 import { RestClient } from 'typed-rest-client';
 import * as initializerTokens from './initializer-tokens.js';
 import { coreTokens } from '../di/index.js';
-import { errorToString } from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { errorToString } from '@d-es-ign/stryker-js-util';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 
 const DEFAULT_NPM_REGISTRY = 'https://registry.npmjs.com';
 

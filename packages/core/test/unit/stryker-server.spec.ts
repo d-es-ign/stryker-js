@@ -1,6 +1,6 @@
 import net from 'net';
 import stream from 'stream';
-import { factory, testInjector, tick } from '@stryker-mutator/test-helpers';
+import { factory, testInjector, tick } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import * as typedInject from 'typed-inject';
@@ -9,9 +9,9 @@ import {
   MutantResult,
   FileDescriptions,
   LogLevel,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+} from '@d-es-ign/stryker-js-api/core';
+import { Logger } from '@d-es-ign/stryker-js-api/logging';
+import { commonTokens } from '@d-es-ign/stryker-js-api/plugin';
 
 import { StrykerServer } from '../../src/stryker-server.js';
 import { firstValueFrom, Observable } from 'rxjs';
@@ -31,10 +31,10 @@ import {
   createInstrumenter,
   Instrumenter,
   InstrumentResult,
-} from '@stryker-mutator/instrumenter';
+} from '@d-es-ign/stryker-js-instrumenter';
 import { FileSystemTestDouble } from '../helpers/file-system-test-double.js';
 import { Project } from '../../src/fs/project.js';
-import { Reporter } from '@stryker-mutator/api/report';
+import { Reporter } from '@d-es-ign/stryker-js-api/report';
 import { StrictReporter } from '../../src/reporters/strict-reporter.js';
 
 describe(StrykerServer.name, () => {

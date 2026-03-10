@@ -1,5 +1,5 @@
-import { testInjector } from '@stryker-mutator/test-helpers';
-import { PluginKind } from '@stryker-mutator/api/plugin';
+import { testInjector } from '@d-es-ign/stryker-js-test-helpers';
+import { PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 
 import { expect } from 'chai';
 

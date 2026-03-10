@@ -1,5 +1,5 @@
-import { strykerCoreSchema } from '@stryker-mutator/api/core';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { strykerCoreSchema } from '@d-es-ign/stryker-js-api/core';
+import { testInjector, factory } from '@d-es-ign/stryker-js-test-helpers';
 import { expect } from 'chai';
 
 import { ConfigReader } from '../../../src/config/config-reader.js';

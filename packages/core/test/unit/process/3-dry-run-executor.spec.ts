@@ -5,7 +5,7 @@ import {
   assertions,
   factory,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import sinon from 'sinon';
 import {
   TestRunner,
@@ -14,10 +14,10 @@ import {
   TimeoutDryRunResult,
   DryRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { expect } from 'chai';
 import { Observable, mergeMap } from 'rxjs';
-import { I } from '@stryker-mutator/util';
+import { I } from '@d-es-ign/stryker-js-util';
 
 import { Timer } from '../../../src/utils/timer.js';
 import {

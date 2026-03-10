@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { URL } from 'url';
 
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@d-es-ign/stryker-js-api/plugin';
 
 import {
   createMochaTestRunner,

@@ -5,11 +5,11 @@ import {
   assertions,
   factory,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@d-es-ign/stryker-js-test-helpers';
 import {
   TestRunnerCapabilities,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@d-es-ign/stryker-js-api/test-runner';
 import { Vitest } from 'vitest/node';
 
 import { VitestTestRunner } from '../../src/vitest-test-runner.js';
