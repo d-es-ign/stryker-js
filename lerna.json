@@ -1,11 +1,17 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "packages": ["packages/*"],
-  "version": "9.6.2",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "9.6.3",
   "npmClient": "pnpm",
   "command": {
     "version": {
-      "allowBranch": ["master", "epic/*", "feat/*"],
+      "allowBranch": [
+        "master",
+        "epic/*",
+        "feat/*"
+      ],
       "conventionalCommits": true,
       "createRelease": "github",
       "forcePublish": true,
