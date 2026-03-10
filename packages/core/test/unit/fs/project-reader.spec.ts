@@ -1,7 +1,10 @@
 import path from 'path';
 import type { Dirent } from 'fs';
 
-import { MutateDescription, MutationRange } from '@d-es-ign/stryker-js-api/core';
+import {
+  MutateDescription,
+  MutationRange,
+} from '@d-es-ign/stryker-js-api/core';
 import { factory, testInjector } from '@d-es-ign/stryker-js-test-helpers';
 import {
   I,
@@ -891,6 +894,49 @@ describe(ProjectReader.name, () => {
         },
       });
       expect(actualProject.incrementalReport).deep.eq(expected);
+    });
+    it('should rebase report file names when projectRoot differs from cwd', async () => {
+      testInjector.options.incremental = true;
+      const reportProjectRoot = path.resolve('/some/other/project');
+      const rebasedMutatedFile = normalizeFileName(
+        path.relative(
+          process.cwd(),
+          path.resolve(reportProjectRoot, 'src/foo.js'),
+        ),
+      );
+      const rebasedTestFile = normalizeFileName(
+        path.relative(
+          process.cwd(),
+          path.resolve(reportProjectRoot, 'test/foo.spec.js'),
+        ),
+      );
+      stubFileSystem({
+        reports: {
+          'stryker-incremental.json': JSON.stringify(
+            factory.mutationTestReportSchemaMutationTestResult({
+              projectRoot: reportProjectRoot,
+              files: {
+                'src/foo.js': factory.mutationTestReportSchemaFileResult({}),
+              },
+              testFiles: {
+                'test/foo.spec.js': factory.mutationTestReportSchemaTestFile(
+                  {},
+                ),
+              },
+            }),
+          ),
+        },
+      });
+      const sut = createSut();
+
+      const actualProject = await sut.read(undefined);
+
+      expect(Object.keys(actualProject.incrementalReport?.files ?? {})).deep.eq(
+        [rebasedMutatedFile],
+      );
+      expect(
+        Object.keys(actualProject.incrementalReport?.testFiles ?? {}),
+      ).deep.eq([rebasedTestFile]);
     });
     it('should respect the incremental file location', async () => {
       testInjector.options.incremental = true;
