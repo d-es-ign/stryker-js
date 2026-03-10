@@ -1,6 +1,6 @@
 {
   "name": "@d-es-ign/stryker-js-core",
-  "version": "9.6.1",
+  "version": "9.6.2",
   "description": "The extendable JavaScript mutation testing framework",
   "type": "module",
   "files": [

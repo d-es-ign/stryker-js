@@ -1,6 +1,6 @@
 {
   "name": "@d-es-ign/stryker-js-util",
-  "version": "9.6.1",
+  "version": "9.6.2",
   "description": "Contains utilities for Stryker, the mutation testing framework for JavaScript and friends",
   "files": [
     "dist/src",
